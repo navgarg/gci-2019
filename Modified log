@@ -1,0 +1,2802 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+navya@navya-Lenovo-Product-Invalid-entry-length-16-Fixed-up-to-11:~$ PS1='\u:\W\$ '
+navya:~$ 
+navya:~$ sudo apt-get install postgresql
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libpq5 postgresql-9.5 postgresql-client-9.5 postgresql-client-common postgresql-common
+  postgresql-contrib-9.5 sysstat
+Suggested packages:
+  postgresql-doc locales-all postgresql-doc-9.5 libdbd-pg-perl isag
+The following NEW packages will be installed:
+  libpq5 postgresql postgresql-9.5 postgresql-client-9.5 postgresql-client-common postgresql-common
+  postgresql-contrib-9.5 sysstat
+0 upgraded, 8 newly installed, 0 to remove and 4 not upgraded.
+Need to get 4,933 kB of archives.
+After this operation, 19.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 libpq5 i386 9.5.19-0ubuntu0.16.04.1 [84.9 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 postgresql-client-common all 173ubuntu0.3 [28.4 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 postgresql-client-9.5 i386 9.5.19-0ubuntu0.16.04.1 [867 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 postgresql-common all 173ubuntu0.3 [154 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 postgresql-9.5 i386 9.5.19-0ubuntu0.16.04.1 [3,062 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 postgresql all 9.5+173ubuntu0.3 [5,392 B]
+Get:7 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 postgresql-contrib-9.5 i386 9.5.19-0ubuntu0.16.04.1 [479 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 sysstat i386 11.2.0-1ubuntu0.2 [254 kB]
+Fetched 4,933 kB in 1s (4,362 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package libpq5:i386.
+(Reading database ... 177122 files and directories currently installed.)
+Preparing to unpack .../libpq5_9.5.19-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libpq5:i386 (9.5.19-0ubuntu0.16.04.1) ...
+Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../postgresql-client-common_173ubuntu0.3_all.deb ...
+Unpacking postgresql-client-common (173ubuntu0.3) ...
+Selecting previously unselected package postgresql-client-9.5.
+Preparing to unpack .../postgresql-client-9.5_9.5.19-0ubuntu0.16.04.1_i386.deb ...
+Unpacking postgresql-client-9.5 (9.5.19-0ubuntu0.16.04.1) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../postgresql-common_173ubuntu0.3_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (173ubuntu0.3) ...
+Selecting previously unselected package postgresql-9.5.
+Preparing to unpack .../postgresql-9.5_9.5.19-0ubuntu0.16.04.1_i386.deb ...
+Unpacking postgresql-9.5 (9.5.19-0ubuntu0.16.04.1) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../postgresql_9.5+173ubuntu0.3_all.deb ...
+Unpacking postgresql (9.5+173ubuntu0.3) ...
+Selecting previously unselected package postgresql-contrib-9.5.
+Preparing to unpack .../postgresql-contrib-9.5_9.5.19-0ubuntu0.16.04.1_i386.deb ...
+Unpacking postgresql-contrib-9.5 (9.5.19-0ubuntu0.16.04.1) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../sysstat_11.2.0-1ubuntu0.2_i386.deb ...
+Unpacking sysstat (11.2.0-1ubuntu0.2) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.23) ...
+Processing triggers for doc-base (0.10.7) ...
+Processing 1 added doc-base file...
+Setting up libpq5:i386 (9.5.19-0ubuntu0.16.04.1) ...
+Setting up postgresql-client-common (173ubuntu0.3) ...
+Setting up postgresql-client-9.5 (9.5.19-0ubuntu0.16.04.1) ...
+update-alternatives: using /usr/share/postgresql/9.5/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up postgresql-common (173ubuntu0.3) ...
+Adding user postgres to group ssl-cert
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+
+Creating config file /etc/logrotate.d/postgresql-common with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Setting up postgresql-9.5 (9.5.19-0ubuntu0.16.04.1) ...
+Creating new cluster 9.5/main ...
+  config /etc/postgresql/9.5/main
+  data   /var/lib/postgresql/9.5/main
+  locale en_IN
+  socket /var/run/postgresql
+  port   5432
+update-alternatives: using /usr/share/postgresql/9.5/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+Setting up postgresql (9.5+173ubuntu0.3) ...
+Setting up postgresql-contrib-9.5 (9.5.19-0ubuntu0.16.04.1) ...
+Setting up sysstat (11.2.0-1ubuntu0.2) ...
+
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.23) ...
+navya:~$ sudo apt-get install postgis
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  i965-va-driver libaacs0 libaec0 libarmadillo6 libarpack2 libass5 libavcodec-ffmpeg56
+  libavdevice-ffmpeg56 libavfilter-ffmpeg5 libavformat-ffmpeg56 libavresample-ffmpeg2
+  libavutil-ffmpeg54 libbdplus0 libblas-common libblas3 libbluray1 libboost-serialization1.58.0
+  libboost-thread1.58.0 libbs2b0 libcgal11v5 libcoin80v5 libcrystalhd3 libdap17v5 libdapclient6v5
+  libdc1394-22 libepsilon1 libfaad2 libflite1 libfreexl1 libgdal1i libgeos-3.5.0 libgeos-c1v5
+  libgfortran3 libgif7 libgme0 libgraphicsmagick-q16-3 libgsm1 libhdf4-0-alt libhdf5-10
+  libiso9660-8 libkmlbase1 libkmldom1 libkmlengine1 liblapack3 liblwgeom-2.2-5 libmad0 libminizip1
+  libmodplug1 libmp3lame0 libmpcdec6 libmysqlclient20 libnetcdf11 libodbc1 libogdi3.2
+  libopenal-data libopenal1 libopencv-core2.4v5 libopencv-imgproc2.4v5 libopenjp2-7 libopenjpeg5
+  libopenscenegraph100v5 libopenthreads20 libpostproc-ffmpeg53 libproj9 libqt4-opengl
+  libschroedinger-1.0-0 libsdl1.2debian libsfcgal1 libshine3 libsnappy1v5 libsodium18 libsoxr0
+  libspatialite7 libssh-gcrypt-4 libsuperlu4 libswresample-ffmpeg1 libswscale-ffmpeg3 libsz2
+  libtbb2 libtwolame0 liburiparser1 libva1 libvcdinfo0 libx264-148 libx265-79 libxerces-c3.1
+  libxine2 libxine2-bin libxine2-doc libxine2-ffmpeg libxine2-misc-plugins libxine2-plugins
+  libxvidcore4 libzmq5 libzvbi-common libzvbi0 mesa-va-drivers mysql-common odbcinst
+  odbcinst1debian2 postgis-doc postgresql-9.5-postgis-2.2 postgresql-9.5-postgis-scripts proj-bin
+  proj-data va-driver-all
+Suggested packages:
+  libbluray-bdj libopenal0a libsimage-dev firmware-crystalhd graphicsmagick-dbg libhdf4-doc
+  libhdf4-alt-dev hdf4-tools libnetcdf4 libmyodbc odbc-postgresql tdsodbc unixodbc-bin ogdi-bin
+  gxine xine-ui libfglrx-amdxvba1
+The following NEW packages will be installed:
+  i965-va-driver libaacs0 libaec0 libarmadillo6 libarpack2 libass5 libavcodec-ffmpeg56
+  libavdevice-ffmpeg56 libavfilter-ffmpeg5 libavformat-ffmpeg56 libavresample-ffmpeg2
+  libavutil-ffmpeg54 libbdplus0 libblas-common libblas3 libbluray1 libboost-serialization1.58.0
+  libboost-thread1.58.0 libbs2b0 libcgal11v5 libcoin80v5 libcrystalhd3 libdap17v5 libdapclient6v5
+  libdc1394-22 libepsilon1 libfaad2 libflite1 libfreexl1 libgdal1i libgeos-3.5.0 libgeos-c1v5
+  libgfortran3 libgif7 libgme0 libgraphicsmagick-q16-3 libgsm1 libhdf4-0-alt libhdf5-10
+  libiso9660-8 libkmlbase1 libkmldom1 libkmlengine1 liblapack3 liblwgeom-2.2-5 libmad0 libminizip1
+  libmodplug1 libmp3lame0 libmpcdec6 libmysqlclient20 libnetcdf11 libodbc1 libogdi3.2
+  libopenal-data libopenal1 libopencv-core2.4v5 libopencv-imgproc2.4v5 libopenjp2-7 libopenjpeg5
+  libopenscenegraph100v5 libopenthreads20 libpostproc-ffmpeg53 libproj9 libqt4-opengl
+  libschroedinger-1.0-0 libsdl1.2debian libsfcgal1 libshine3 libsnappy1v5 libsodium18 libsoxr0
+  libspatialite7 libssh-gcrypt-4 libsuperlu4 libswresample-ffmpeg1 libswscale-ffmpeg3 libsz2
+  libtbb2 libtwolame0 liburiparser1 libva1 libvcdinfo0 libx264-148 libx265-79 libxerces-c3.1
+  libxine2 libxine2-bin libxine2-doc libxine2-ffmpeg libxine2-misc-plugins libxine2-plugins
+  libxvidcore4 libzmq5 libzvbi-common libzvbi0 mesa-va-drivers mysql-common odbcinst
+  odbcinst1debian2 postgis postgis-doc postgresql-9.5-postgis-2.2 postgresql-9.5-postgis-scripts
+  proj-bin proj-data va-driver-all
+0 upgraded, 107 newly installed, 0 to remove and 4 not upgraded.
+Need to get 63.1 MB of archives.
+After this operation, 278 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libcrystalhd3 i386 1:0.0~git20110715.fdd2f19-11build1 [50.6 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libgsm1 i386 1.0.13-4 [27.0 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libmpcdec6 i386 2:0.1~r459-4.1build1 [33.3 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libschroedinger-1.0-0 i386 1.0.11-2.1build1 [262 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libblas-common i386 3.6.0-2ubuntu2 [5,338 B]
+Get:6 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libblas3 i386 3.6.0-2ubuntu2 [130 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libsuperlu4 i386 4.3+dfsg-3 [147 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libopenal-data all 1:1.16.0-3 [101 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libopenal1 i386 1:1.16.0-3 [170 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libaacs0 i386 0.8.1-1 [50.5 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libaec0 i386 0.3.2-1 [20.5 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 libgfortran3 i386 5.4.0-6ubuntu1~16.04.12 [250 kB]
+Get:13 http://in.archive.ubuntu.com/ubuntu xenial/main i386 liblapack3 i386 3.6.0-2ubuntu2 [1,764 kB]
+Get:14 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libarpack2 i386 3.3.0-1build2 [86.8 kB]
+Get:15 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libarmadillo6 i386 1:6.500.5+dfsg-1 [76.9 kB]
+Get:16 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libavutil-ffmpeg54 i386 7:2.8.15-0ubuntu0.16.04.1 [195 kB]
+Get:17 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libmp3lame0 i386 3.99.5+repack1-9build1 [128 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libopenjpeg5 i386 1:1.5.2-3.1 [107 kB]
+Get:19 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libshine3 i386 3.1.0-4 [24.9 kB]
+Get:20 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libsnappy1v5 i386 1.1.3-2 [17.0 kB]
+Get:21 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libsoxr0 i386 0.1.2-1 [72.3 kB]
+Get:22 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libswresample-ffmpeg1 i386 7:2.8.15-0ubuntu0.16.04.1 [57.1 kB]
+Get:23 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libtwolame0 i386 0.3.13-1.2 [47.9 kB]
+Get:24 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libva1 i386 1.7.0-1ubuntu0.1 [48.7 kB]
+Get:25 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libx264-148 i386 2:0.148.2643+git5c65704-1 [864 kB]
+Get:26 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libx265-79 i386 1.9-3 [500 kB]
+Get:27 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxvidcore4 i386 2:1.3.4-1 [198 kB]
+Get:28 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libzvbi-common all 0.2.35-10 [32.5 kB]
+Get:29 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libzvbi0 i386 0.2.35-10 [240 kB]
+Get:30 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libavcodec-ffmpeg56 i386 7:2.8.15-0ubuntu0.16.04.1 [4,014 kB]
+Get:31 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libass5 i386 0.13.1-1 [81.8 kB]
+Get:32 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libbluray1 i386 1:0.9.2-2 [141 kB]
+Get:33 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libgme0 i386 0.6.0-3ubuntu0.16.04.1 [127 kB]
+Get:34 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libmodplug1 i386 1:0.8.8.5-2 [157 kB]
+Get:35 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 libssh-gcrypt-4 i386 0.6.3-4.3ubuntu0.2 [133 kB]
+Get:36 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libavformat-ffmpeg56 i386 7:2.8.15-0ubuntu0.16.04.1 [907 kB]
+Get:37 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libavresample-ffmpeg2 i386 7:2.8.15-0ubuntu0.16.04.1 [53.4 kB]
+Get:38 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libbs2b0 i386 3.1.0+dfsg-2.2 [10.8 kB]
+Get:39 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libflite1 i386 2.0.0-release-1 [12.5 MB]
+Get:40 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libtbb2 i386 4.4~20151115-0ubuntu3 [118 kB]
+Get:41 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libopencv-core2.4v5 i386 2.4.9.1+dfsg-1.5ubuntu1.1 [687 kB]
+Get:42 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libopencv-imgproc2.4v5 i386 2.4.9.1+dfsg-1.5ubuntu1.1 [624 kB]
+Get:43 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libpostproc-ffmpeg53 i386 7:2.8.15-0ubuntu0.16.04.1 [47.5 kB]
+Get:44 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libswscale-ffmpeg3 i386 7:2.8.15-0ubuntu0.16.04.1 [151 kB]
+Get:45 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libsodium18 i386 1.0.8-5 [152 kB]
+Get:46 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libzmq5 i386 4.1.4-7ubuntu0.1 [160 kB]
+Get:47 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libavfilter-ffmpeg5 i386 7:2.8.15-0ubuntu0.16.04.1 [530 kB]
+Get:48 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libdc1394-22 i386 2.2.4-1 [85.3 kB]
+Get:49 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 libsdl1.2debian i386 1.2.15+dfsg1-3ubuntu0.1 [184 kB]
+Get:50 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libavdevice-ffmpeg56 i386 7:2.8.15-0ubuntu0.16.04.1 [74.8 kB]
+Get:51 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libbdplus0 i386 0.1.2-1 [47.6 kB]
+Get:52 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libboost-serialization1.58.0 i386 1.58.0+dfsg-5ubuntu3.1 [120 kB]
+Get:53 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 libboost-thread1.58.0 i386 1.58.0+dfsg-5ubuntu3.1 [48.9 kB]
+Get:54 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libcgal11v5 i386 4.7-4 [202 kB]
+Get:55 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libcoin80v5 i386 3.1.4~abc9f50+dfsg1-1 [2,516 kB]
+Get:56 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libdap17v5 i386 3.15.1-7 [428 kB]
+Get:57 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libdapclient6v5 i386 3.15.1-7 [89.7 kB]
+Get:58 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libepsilon1 i386 0.9.2-3ubuntu1 [40.6 kB]
+Get:59 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libfaad2 i386 2.8.0~cvs20150510-1ubuntu0.1 [162 kB]
+Get:60 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libfreexl1 i386 1.0.2-1ubuntu0.1 [35.1 kB]
+Get:61 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libgeos-3.5.0 i386 3.5.0-1ubuntu2 [512 kB]
+Get:62 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libgeos-c1v5 i386 3.5.0-1ubuntu2 [53.4 kB]
+Get:63 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 libgif7 i386 5.1.4-0.3~16.04.1 [31.7 kB]
+Get:64 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libhdf4-0-alt i386 4.2.10-3.2 [270 kB]
+Get:65 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libsz2 i386 0.3.2-1 [5,146 B]
+Get:66 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libhdf5-10 i386 1.8.16+docs-4ubuntu1.1 [989 kB]
+Get:67 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libminizip1 i386 1.1-8 [23.5 kB]
+Get:68 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 liburiparser1 i386 0.8.4-1 [40.9 kB]
+Get:69 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libkmlbase1 i386 1.3.0-1 [45.8 kB]
+Get:70 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libkmldom1 i386 1.3.0-1 [179 kB]
+Get:71 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libkmlengine1 i386 1.3.0-1 [80.4 kB]
+Get:72 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 mysql-common all 5.7.28-0ubuntu0.16.04.2 [14.7 kB]
+Get:73 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 libmysqlclient20 i386 5.7.28-0ubuntu0.16.04.2 [674 kB]
+Get:74 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libnetcdf11 i386 1:4.4.0-2 [313 kB]
+Get:75 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libodbc1 i386 2.3.1-4.1 [192 kB]
+Get:76 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 proj-data all 4.9.2-2 [4,004 kB]
+Get:77 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libproj9 i386 4.9.2-2 [148 kB]
+Get:78 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libogdi3.2 i386 3.2.0~beta2-7.1build1 [225 kB]
+Get:79 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libopenjp2-7 i386 2.1.2-1.1+deb9u3build0.16.04.1 [119 kB]
+Get:80 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libspatialite7 i386 4.3.0a-5 [1,257 kB]
+Get:81 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxerces-c3.1 i386 3.1.3+debian-1 [885 kB]
+Get:82 http://in.archive.ubuntu.com/ubuntu xenial/main i386 odbcinst i386 2.3.1-4.1 [13.4 kB]
+Get:83 http://in.archive.ubuntu.com/ubuntu xenial/main i386 odbcinst1debian2 i386 2.3.1-4.1 [43.5 kB]
+Get:84 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libgdal1i i386 1.11.3+dfsg-3build2 [4,200 kB]
+Get:85 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libgraphicsmagick-q16-3 i386 1.3.23-1ubuntu0.2 [1,159 kB]
+Get:86 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libiso9660-8 i386 0.83-4.2ubuntu1 [19.7 kB]
+Get:87 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libopenthreads20 i386 3.2.1-7ubuntu4 [13.4 kB]
+Get:88 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libqt4-opengl i386 4:4.8.7+dfsg-5ubuntu2 [319 kB]
+Get:89 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxine2-bin i386 1.2.6-1build5 [1,420 kB]
+Get:90 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libmad0 i386 0.15.1b-9ubuntu16.04.1 [63.8 kB]
+Get:91 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxine2-ffmpeg i386 1.2.6-1build5 [220 kB]
+Get:92 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libvcdinfo0 i386 0.7.24+dfsg-0.2 [96.2 kB]
+Get:93 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxine2-misc-plugins i386 1.2.6-1build5 [624 kB]
+Get:94 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxine2-plugins all 1.2.6-1build5 [3,250 B]
+Get:95 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxine2 i386 1.2.6-1build5 [1,552 B]
+Get:96 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libopenscenegraph100v5 i386 3.2.1-7ubuntu4 [5,879 kB]
+Get:97 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libsfcgal1 i386 1.2.2-1 [1,872 kB]  
+Get:98 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 liblwgeom-2.2-5 i386 2.2.1+dfsg-2ubuntu0.1 [223 kB]
+Get:99 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 libxine2-doc all 1.2.6-1build5 [82.3 kB]
+Get:100 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 mesa-va-drivers i386 18.0.5-0ubuntu0~16.04.1 [1,989 kB]
+Get:101 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 postgis i386 2.2.1+dfsg-2ubuntu0.1 [162 kB]
+Get:102 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 postgis-doc all 2.2.1+dfsg-2ubuntu0.1 [2,836 kB]
+Get:103 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 postgresql-9.5-postgis-scripts all 2.2.1+dfsg-2ubuntu0.1 [581 kB]
+Get:104 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 postgresql-9.5-postgis-2.2 i386 2.2.1+dfsg-2ubuntu0.1 [570 kB]
+Get:105 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 i965-va-driver i386 1.7.0-1 [283 kB]
+Get:106 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 va-driver-all i386 1.7.0-1ubuntu0.1 [4,526 B]
+Get:107 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 proj-bin i386 4.9.2-2 [31.5 kB]    
+Fetched 63.1 MB in 9s (6,912 kB/s)                                                                  
+Extracting templates from packages: 100%
+Selecting previously unselected package libcrystalhd3:i386.
+(Reading database ... 177845 files and directories currently installed.)
+Preparing to unpack .../libcrystalhd3_1%3a0.0~git20110715.fdd2f19-11build1_i386.deb ...
+Unpacking libcrystalhd3:i386 (1:0.0~git20110715.fdd2f19-11build1) ...
+Selecting previously unselected package libgsm1:i386.
+Preparing to unpack .../libgsm1_1.0.13-4_i386.deb ...
+Unpacking libgsm1:i386 (1.0.13-4) ...
+Selecting previously unselected package libmpcdec6:i386.
+Preparing to unpack .../libmpcdec6_2%3a0.1~r459-4.1build1_i386.deb ...
+Unpacking libmpcdec6:i386 (2:0.1~r459-4.1build1) ...
+Selecting previously unselected package libschroedinger-1.0-0:i386.
+Preparing to unpack .../libschroedinger-1.0-0_1.0.11-2.1build1_i386.deb ...
+Unpacking libschroedinger-1.0-0:i386 (1.0.11-2.1build1) ...
+Selecting previously unselected package libblas-common.
+Preparing to unpack .../libblas-common_3.6.0-2ubuntu2_i386.deb ...
+Unpacking libblas-common (3.6.0-2ubuntu2) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../libblas3_3.6.0-2ubuntu2_i386.deb ...
+Unpacking libblas3 (3.6.0-2ubuntu2) ...
+Selecting previously unselected package libsuperlu4:i386.
+Preparing to unpack .../libsuperlu4_4.3+dfsg-3_i386.deb ...
+Unpacking libsuperlu4:i386 (4.3+dfsg-3) ...
+Selecting previously unselected package libopenal-data.
+Preparing to unpack .../libopenal-data_1%3a1.16.0-3_all.deb ...
+Unpacking libopenal-data (1:1.16.0-3) ...
+Selecting previously unselected package libopenal1:i386.
+Preparing to unpack .../libopenal1_1%3a1.16.0-3_i386.deb ...
+Unpacking libopenal1:i386 (1:1.16.0-3) ...
+Selecting previously unselected package libaacs0:i386.
+Preparing to unpack .../libaacs0_0.8.1-1_i386.deb ...
+Unpacking libaacs0:i386 (0.8.1-1) ...
+Selecting previously unselected package libaec0:i386.
+Preparing to unpack .../libaec0_0.3.2-1_i386.deb ...
+Unpacking libaec0:i386 (0.3.2-1) ...
+Selecting previously unselected package libgfortran3:i386.
+Preparing to unpack .../libgfortran3_5.4.0-6ubuntu1~16.04.12_i386.deb ...
+Unpacking libgfortran3:i386 (5.4.0-6ubuntu1~16.04.12) ...
+Selecting previously unselected package liblapack3.
+Preparing to unpack .../liblapack3_3.6.0-2ubuntu2_i386.deb ...
+Unpacking liblapack3 (3.6.0-2ubuntu2) ...
+Selecting previously unselected package libarpack2.
+Preparing to unpack .../libarpack2_3.3.0-1build2_i386.deb ...
+Unpacking libarpack2 (3.3.0-1build2) ...
+Selecting previously unselected package libarmadillo6.
+Preparing to unpack .../libarmadillo6_1%3a6.500.5+dfsg-1_i386.deb ...
+Unpacking libarmadillo6 (1:6.500.5+dfsg-1) ...
+Selecting previously unselected package libavutil-ffmpeg54:i386.
+Preparing to unpack .../libavutil-ffmpeg54_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libavutil-ffmpeg54:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libmp3lame0:i386.
+Preparing to unpack .../libmp3lame0_3.99.5+repack1-9build1_i386.deb ...
+Unpacking libmp3lame0:i386 (3.99.5+repack1-9build1) ...
+Selecting previously unselected package libopenjpeg5:i386.
+Preparing to unpack .../libopenjpeg5_1%3a1.5.2-3.1_i386.deb ...
+Unpacking libopenjpeg5:i386 (1:1.5.2-3.1) ...
+Selecting previously unselected package libshine3:i386.
+Preparing to unpack .../libshine3_3.1.0-4_i386.deb ...
+Unpacking libshine3:i386 (3.1.0-4) ...
+Selecting previously unselected package libsnappy1v5:i386.
+Preparing to unpack .../libsnappy1v5_1.1.3-2_i386.deb ...
+Unpacking libsnappy1v5:i386 (1.1.3-2) ...
+Selecting previously unselected package libsoxr0:i386.
+Preparing to unpack .../libsoxr0_0.1.2-1_i386.deb ...
+Unpacking libsoxr0:i386 (0.1.2-1) ...
+Selecting previously unselected package libswresample-ffmpeg1:i386.
+Preparing to unpack .../libswresample-ffmpeg1_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libswresample-ffmpeg1:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libtwolame0:i386.
+Preparing to unpack .../libtwolame0_0.3.13-1.2_i386.deb ...
+Unpacking libtwolame0:i386 (0.3.13-1.2) ...
+Selecting previously unselected package libva1:i386.
+Preparing to unpack .../libva1_1.7.0-1ubuntu0.1_i386.deb ...
+Unpacking libva1:i386 (1.7.0-1ubuntu0.1) ...
+Selecting previously unselected package libx264-148:i386.
+Preparing to unpack .../libx264-148_2%3a0.148.2643+git5c65704-1_i386.deb ...
+Unpacking libx264-148:i386 (2:0.148.2643+git5c65704-1) ...
+Selecting previously unselected package libx265-79:i386.
+Preparing to unpack .../libx265-79_1.9-3_i386.deb ...
+Unpacking libx265-79:i386 (1.9-3) ...
+Selecting previously unselected package libxvidcore4:i386.
+Preparing to unpack .../libxvidcore4_2%3a1.3.4-1_i386.deb ...
+Unpacking libxvidcore4:i386 (2:1.3.4-1) ...
+Selecting previously unselected package libzvbi-common.
+Preparing to unpack .../libzvbi-common_0.2.35-10_all.deb ...
+Unpacking libzvbi-common (0.2.35-10) ...
+Selecting previously unselected package libzvbi0:i386.
+Preparing to unpack .../libzvbi0_0.2.35-10_i386.deb ...
+Unpacking libzvbi0:i386 (0.2.35-10) ...
+Selecting previously unselected package libavcodec-ffmpeg56:i386.
+Preparing to unpack .../libavcodec-ffmpeg56_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libavcodec-ffmpeg56:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libass5:i386.
+Preparing to unpack .../libass5_0.13.1-1_i386.deb ...
+Unpacking libass5:i386 (0.13.1-1) ...
+Selecting previously unselected package libbluray1:i386.
+Preparing to unpack .../libbluray1_1%3a0.9.2-2_i386.deb ...
+Unpacking libbluray1:i386 (1:0.9.2-2) ...
+Selecting previously unselected package libgme0:i386.
+Preparing to unpack .../libgme0_0.6.0-3ubuntu0.16.04.1_i386.deb ...
+Unpacking libgme0:i386 (0.6.0-3ubuntu0.16.04.1) ...
+Selecting previously unselected package libmodplug1:i386.
+Preparing to unpack .../libmodplug1_1%3a0.8.8.5-2_i386.deb ...
+Unpacking libmodplug1:i386 (1:0.8.8.5-2) ...
+Selecting previously unselected package libssh-gcrypt-4:i386.
+Preparing to unpack .../libssh-gcrypt-4_0.6.3-4.3ubuntu0.2_i386.deb ...
+Unpacking libssh-gcrypt-4:i386 (0.6.3-4.3ubuntu0.2) ...
+Selecting previously unselected package libavformat-ffmpeg56:i386.
+Preparing to unpack .../libavformat-ffmpeg56_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libavformat-ffmpeg56:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libavresample-ffmpeg2:i386.
+Preparing to unpack .../libavresample-ffmpeg2_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libavresample-ffmpeg2:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libbs2b0:i386.
+Preparing to unpack .../libbs2b0_3.1.0+dfsg-2.2_i386.deb ...
+Unpacking libbs2b0:i386 (3.1.0+dfsg-2.2) ...
+Selecting previously unselected package libflite1:i386.
+Preparing to unpack .../libflite1_2.0.0-release-1_i386.deb ...
+Unpacking libflite1:i386 (2.0.0-release-1) ...
+Selecting previously unselected package libtbb2:i386.
+Preparing to unpack .../libtbb2_4.4~20151115-0ubuntu3_i386.deb ...
+Unpacking libtbb2:i386 (4.4~20151115-0ubuntu3) ...
+Selecting previously unselected package libopencv-core2.4v5:i386.
+Preparing to unpack .../libopencv-core2.4v5_2.4.9.1+dfsg-1.5ubuntu1.1_i386.deb ...
+Unpacking libopencv-core2.4v5:i386 (2.4.9.1+dfsg-1.5ubuntu1.1) ...
+Selecting previously unselected package libopencv-imgproc2.4v5:i386.
+Preparing to unpack .../libopencv-imgproc2.4v5_2.4.9.1+dfsg-1.5ubuntu1.1_i386.deb ...
+Unpacking libopencv-imgproc2.4v5:i386 (2.4.9.1+dfsg-1.5ubuntu1.1) ...
+Selecting previously unselected package libpostproc-ffmpeg53:i386.
+Preparing to unpack .../libpostproc-ffmpeg53_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libpostproc-ffmpeg53:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libswscale-ffmpeg3:i386.
+Preparing to unpack .../libswscale-ffmpeg3_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libswscale-ffmpeg3:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libsodium18:i386.
+Preparing to unpack .../libsodium18_1.0.8-5_i386.deb ...
+Unpacking libsodium18:i386 (1.0.8-5) ...
+Selecting previously unselected package libzmq5:i386.
+Preparing to unpack .../libzmq5_4.1.4-7ubuntu0.1_i386.deb ...
+Unpacking libzmq5:i386 (4.1.4-7ubuntu0.1) ...
+Selecting previously unselected package libavfilter-ffmpeg5:i386.
+Preparing to unpack .../libavfilter-ffmpeg5_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libavfilter-ffmpeg5:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libdc1394-22:i386.
+Preparing to unpack .../libdc1394-22_2.2.4-1_i386.deb ...
+Unpacking libdc1394-22:i386 (2.2.4-1) ...
+Selecting previously unselected package libsdl1.2debian:i386.
+Preparing to unpack .../libsdl1.2debian_1.2.15+dfsg1-3ubuntu0.1_i386.deb ...
+Unpacking libsdl1.2debian:i386 (1.2.15+dfsg1-3ubuntu0.1) ...
+Selecting previously unselected package libavdevice-ffmpeg56:i386.
+Preparing to unpack .../libavdevice-ffmpeg56_7%3a2.8.15-0ubuntu0.16.04.1_i386.deb ...
+Unpacking libavdevice-ffmpeg56:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libbdplus0:i386.
+Preparing to unpack .../libbdplus0_0.1.2-1_i386.deb ...
+Unpacking libbdplus0:i386 (0.1.2-1) ...
+Selecting previously unselected package libboost-serialization1.58.0:i386.
+Preparing to unpack .../libboost-serialization1.58.0_1.58.0+dfsg-5ubuntu3.1_i386.deb ...
+Unpacking libboost-serialization1.58.0:i386 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libboost-thread1.58.0:i386.
+Preparing to unpack .../libboost-thread1.58.0_1.58.0+dfsg-5ubuntu3.1_i386.deb ...
+Unpacking libboost-thread1.58.0:i386 (1.58.0+dfsg-5ubuntu3.1) ...
+Selecting previously unselected package libcgal11v5:i386.
+Preparing to unpack .../libcgal11v5_4.7-4_i386.deb ...
+Unpacking libcgal11v5:i386 (4.7-4) ...
+Selecting previously unselected package libcoin80v5.
+Preparing to unpack .../libcoin80v5_3.1.4~abc9f50+dfsg1-1_i386.deb ...
+Unpacking libcoin80v5 (3.1.4~abc9f50+dfsg1-1) ...
+Selecting previously unselected package libdap17v5:i386.
+Preparing to unpack .../libdap17v5_3.15.1-7_i386.deb ...
+Unpacking libdap17v5:i386 (3.15.1-7) ...
+Selecting previously unselected package libdapclient6v5:i386.
+Preparing to unpack .../libdapclient6v5_3.15.1-7_i386.deb ...
+Unpacking libdapclient6v5:i386 (3.15.1-7) ...
+Selecting previously unselected package libepsilon1:i386.
+Preparing to unpack .../libepsilon1_0.9.2-3ubuntu1_i386.deb ...
+Unpacking libepsilon1:i386 (0.9.2-3ubuntu1) ...
+Selecting previously unselected package libfaad2:i386.
+Preparing to unpack .../libfaad2_2.8.0~cvs20150510-1ubuntu0.1_i386.deb ...
+Unpacking libfaad2:i386 (2.8.0~cvs20150510-1ubuntu0.1) ...
+Selecting previously unselected package libfreexl1:i386.
+Preparing to unpack .../libfreexl1_1.0.2-1ubuntu0.1_i386.deb ...
+Unpacking libfreexl1:i386 (1.0.2-1ubuntu0.1) ...
+Selecting previously unselected package libgeos-3.5.0.
+Preparing to unpack .../libgeos-3.5.0_3.5.0-1ubuntu2_i386.deb ...
+Unpacking libgeos-3.5.0 (3.5.0-1ubuntu2) ...
+Selecting previously unselected package libgeos-c1v5.
+Preparing to unpack .../libgeos-c1v5_3.5.0-1ubuntu2_i386.deb ...
+Unpacking libgeos-c1v5 (3.5.0-1ubuntu2) ...
+Selecting previously unselected package libgif7:i386.
+Preparing to unpack .../libgif7_5.1.4-0.3~16.04.1_i386.deb ...
+Unpacking libgif7:i386 (5.1.4-0.3~16.04.1) ...
+Selecting previously unselected package libhdf4-0-alt.
+Preparing to unpack .../libhdf4-0-alt_4.2.10-3.2_i386.deb ...
+Unpacking libhdf4-0-alt (4.2.10-3.2) ...
+Selecting previously unselected package libsz2:i386.
+Preparing to unpack .../libsz2_0.3.2-1_i386.deb ...
+Unpacking libsz2:i386 (0.3.2-1) ...
+Selecting previously unselected package libhdf5-10:i386.
+Preparing to unpack .../libhdf5-10_1.8.16+docs-4ubuntu1.1_i386.deb ...
+Unpacking libhdf5-10:i386 (1.8.16+docs-4ubuntu1.1) ...
+Selecting previously unselected package libminizip1:i386.
+Preparing to unpack .../libminizip1_1.1-8_i386.deb ...
+Unpacking libminizip1:i386 (1.1-8) ...
+Selecting previously unselected package liburiparser1:i386.
+Preparing to unpack .../liburiparser1_0.8.4-1_i386.deb ...
+Unpacking liburiparser1:i386 (0.8.4-1) ...
+Selecting previously unselected package libkmlbase1:i386.
+Preparing to unpack .../libkmlbase1_1.3.0-1_i386.deb ...
+Unpacking libkmlbase1:i386 (1.3.0-1) ...
+Selecting previously unselected package libkmldom1:i386.
+Preparing to unpack .../libkmldom1_1.3.0-1_i386.deb ...
+Unpacking libkmldom1:i386 (1.3.0-1) ...
+Selecting previously unselected package libkmlengine1:i386.
+Preparing to unpack .../libkmlengine1_1.3.0-1_i386.deb ...
+Unpacking libkmlengine1:i386 (1.3.0-1) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../mysql-common_5.7.28-0ubuntu0.16.04.2_all.deb ...
+Unpacking mysql-common (5.7.28-0ubuntu0.16.04.2) ...
+Selecting previously unselected package libmysqlclient20:i386.
+Preparing to unpack .../libmysqlclient20_5.7.28-0ubuntu0.16.04.2_i386.deb ...
+Unpacking libmysqlclient20:i386 (5.7.28-0ubuntu0.16.04.2) ...
+Selecting previously unselected package libnetcdf11.
+Preparing to unpack .../libnetcdf11_1%3a4.4.0-2_i386.deb ...
+Unpacking libnetcdf11 (1:4.4.0-2) ...
+Selecting previously unselected package libodbc1:i386.
+Preparing to unpack .../libodbc1_2.3.1-4.1_i386.deb ...
+Unpacking libodbc1:i386 (2.3.1-4.1) ...
+Selecting previously unselected package proj-data.
+Preparing to unpack .../proj-data_4.9.2-2_all.deb ...
+Unpacking proj-data (4.9.2-2) ...
+Selecting previously unselected package libproj9.
+Preparing to unpack .../libproj9_4.9.2-2_i386.deb ...
+Unpacking libproj9 (4.9.2-2) ...
+Selecting previously unselected package libogdi3.2.
+Preparing to unpack .../libogdi3.2_3.2.0~beta2-7.1build1_i386.deb ...
+Unpacking libogdi3.2 (3.2.0~beta2-7.1build1) ...
+Selecting previously unselected package libopenjp2-7:i386.
+Preparing to unpack .../libopenjp2-7_2.1.2-1.1+deb9u3build0.16.04.1_i386.deb ...
+Unpacking libopenjp2-7:i386 (2.1.2-1.1+deb9u3build0.16.04.1) ...
+Selecting previously unselected package libspatialite7:i386.
+Preparing to unpack .../libspatialite7_4.3.0a-5_i386.deb ...
+Unpacking libspatialite7:i386 (4.3.0a-5) ...
+Selecting previously unselected package libxerces-c3.1:i386.
+Preparing to unpack .../libxerces-c3.1_3.1.3+debian-1_i386.deb ...
+Unpacking libxerces-c3.1:i386 (3.1.3+debian-1) ...
+Selecting previously unselected package odbcinst.
+Preparing to unpack .../odbcinst_2.3.1-4.1_i386.deb ...
+Unpacking odbcinst (2.3.1-4.1) ...
+Selecting previously unselected package odbcinst1debian2:i386.
+Preparing to unpack .../odbcinst1debian2_2.3.1-4.1_i386.deb ...
+Unpacking odbcinst1debian2:i386 (2.3.1-4.1) ...
+Selecting previously unselected package libgdal1i.
+Preparing to unpack .../libgdal1i_1.11.3+dfsg-3build2_i386.deb ...
+Unpacking libgdal1i (1.11.3+dfsg-3build2) ...
+Selecting previously unselected package libgraphicsmagick-q16-3.
+Preparing to unpack .../libgraphicsmagick-q16-3_1.3.23-1ubuntu0.2_i386.deb ...
+Unpacking libgraphicsmagick-q16-3 (1.3.23-1ubuntu0.2) ...
+Selecting previously unselected package libiso9660-8:i386.
+Preparing to unpack .../libiso9660-8_0.83-4.2ubuntu1_i386.deb ...
+Unpacking libiso9660-8:i386 (0.83-4.2ubuntu1) ...
+Selecting previously unselected package libopenthreads20:i386.
+Preparing to unpack .../libopenthreads20_3.2.1-7ubuntu4_i386.deb ...
+Unpacking libopenthreads20:i386 (3.2.1-7ubuntu4) ...
+Selecting previously unselected package libqt4-opengl:i386.
+Preparing to unpack .../libqt4-opengl_4%3a4.8.7+dfsg-5ubuntu2_i386.deb ...
+Unpacking libqt4-opengl:i386 (4:4.8.7+dfsg-5ubuntu2) ...
+Selecting previously unselected package libxine2-bin.
+Preparing to unpack .../libxine2-bin_1.2.6-1build5_i386.deb ...
+Unpacking libxine2-bin (1.2.6-1build5) ...
+Selecting previously unselected package libmad0:i386.
+Preparing to unpack .../libmad0_0.15.1b-9ubuntu16.04.1_i386.deb ...
+Unpacking libmad0:i386 (0.15.1b-9ubuntu16.04.1) ...
+Selecting previously unselected package libxine2-ffmpeg.
+Preparing to unpack .../libxine2-ffmpeg_1.2.6-1build5_i386.deb ...
+Unpacking libxine2-ffmpeg (1.2.6-1build5) ...
+Selecting previously unselected package libvcdinfo0.
+Preparing to unpack .../libvcdinfo0_0.7.24+dfsg-0.2_i386.deb ...
+Unpacking libvcdinfo0 (0.7.24+dfsg-0.2) ...
+Selecting previously unselected package libxine2-misc-plugins.
+Preparing to unpack .../libxine2-misc-plugins_1.2.6-1build5_i386.deb ...
+Unpacking libxine2-misc-plugins (1.2.6-1build5) ...
+Selecting previously unselected package libxine2-plugins.
+Preparing to unpack .../libxine2-plugins_1.2.6-1build5_all.deb ...
+Unpacking libxine2-plugins (1.2.6-1build5) ...
+Selecting previously unselected package libxine2.
+Preparing to unpack .../libxine2_1.2.6-1build5_i386.deb ...
+Unpacking libxine2 (1.2.6-1build5) ...
+Selecting previously unselected package libopenscenegraph100v5:i386.
+Preparing to unpack .../libopenscenegraph100v5_3.2.1-7ubuntu4_i386.deb ...
+Unpacking libopenscenegraph100v5:i386 (3.2.1-7ubuntu4) ...
+Selecting previously unselected package libsfcgal1.
+Preparing to unpack .../libsfcgal1_1.2.2-1_i386.deb ...
+Unpacking libsfcgal1 (1.2.2-1) ...
+Selecting previously unselected package liblwgeom-2.2-5.
+Preparing to unpack .../liblwgeom-2.2-5_2.2.1+dfsg-2ubuntu0.1_i386.deb ...
+Unpacking liblwgeom-2.2-5 (2.2.1+dfsg-2ubuntu0.1) ...
+Selecting previously unselected package libxine2-doc.
+Preparing to unpack .../libxine2-doc_1.2.6-1build5_all.deb ...
+Unpacking libxine2-doc (1.2.6-1build5) ...
+Selecting previously unselected package mesa-va-drivers:i386.
+Preparing to unpack .../mesa-va-drivers_18.0.5-0ubuntu0~16.04.1_i386.deb ...
+Unpacking mesa-va-drivers:i386 (18.0.5-0ubuntu0~16.04.1) ...
+Selecting previously unselected package postgis.
+Preparing to unpack .../postgis_2.2.1+dfsg-2ubuntu0.1_i386.deb ...
+Unpacking postgis (2.2.1+dfsg-2ubuntu0.1) ...
+Selecting previously unselected package postgis-doc.
+Preparing to unpack .../postgis-doc_2.2.1+dfsg-2ubuntu0.1_all.deb ...
+Unpacking postgis-doc (2.2.1+dfsg-2ubuntu0.1) ...
+Selecting previously unselected package postgresql-9.5-postgis-scripts.
+Preparing to unpack .../postgresql-9.5-postgis-scripts_2.2.1+dfsg-2ubuntu0.1_all.deb ...
+Unpacking postgresql-9.5-postgis-scripts (2.2.1+dfsg-2ubuntu0.1) ...
+Selecting previously unselected package postgresql-9.5-postgis-2.2.
+Preparing to unpack .../postgresql-9.5-postgis-2.2_2.2.1+dfsg-2ubuntu0.1_i386.deb ...
+Unpacking postgresql-9.5-postgis-2.2 (2.2.1+dfsg-2ubuntu0.1) ...
+Selecting previously unselected package i965-va-driver:i386.
+Preparing to unpack .../i965-va-driver_1.7.0-1_i386.deb ...
+Unpacking i965-va-driver:i386 (1.7.0-1) ...
+Selecting previously unselected package va-driver-all:i386.
+Preparing to unpack .../va-driver-all_1.7.0-1ubuntu0.1_i386.deb ...
+Unpacking va-driver-all:i386 (1.7.0-1ubuntu0.1) ...
+Selecting previously unselected package proj-bin.
+Preparing to unpack .../proj-bin_4.9.2-2_i386.deb ...
+Unpacking proj-bin (4.9.2-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for doc-base (0.10.7) ...
+Processing 1 added doc-base file...
+Processing triggers for postgresql-common (173ubuntu0.3) ...
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Setting up libcrystalhd3:i386 (1:0.0~git20110715.fdd2f19-11build1) ...
+Setting up libgsm1:i386 (1.0.13-4) ...
+Setting up libmpcdec6:i386 (2:0.1~r459-4.1build1) ...
+Setting up libschroedinger-1.0-0:i386 (1.0.11-2.1build1) ...
+Setting up libblas-common (3.6.0-2ubuntu2) ...
+Setting up libblas3 (3.6.0-2ubuntu2) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Setting up libsuperlu4:i386 (4.3+dfsg-3) ...
+Setting up libopenal-data (1:1.16.0-3) ...
+Setting up libopenal1:i386 (1:1.16.0-3) ...
+Setting up libaacs0:i386 (0.8.1-1) ...
+Setting up libaec0:i386 (0.3.2-1) ...
+Setting up libgfortran3:i386 (5.4.0-6ubuntu1~16.04.12) ...
+Setting up liblapack3 (3.6.0-2ubuntu2) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up libarpack2 (3.3.0-1build2) ...
+Setting up libarmadillo6 (1:6.500.5+dfsg-1) ...
+Setting up libavutil-ffmpeg54:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libmp3lame0:i386 (3.99.5+repack1-9build1) ...
+Setting up libopenjpeg5:i386 (1:1.5.2-3.1) ...
+Setting up libshine3:i386 (3.1.0-4) ...
+Setting up libsnappy1v5:i386 (1.1.3-2) ...
+Setting up libsoxr0:i386 (0.1.2-1) ...
+Setting up libswresample-ffmpeg1:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libtwolame0:i386 (0.3.13-1.2) ...
+Setting up libva1:i386 (1.7.0-1ubuntu0.1) ...
+Setting up libx264-148:i386 (2:0.148.2643+git5c65704-1) ...
+Setting up libx265-79:i386 (1.9-3) ...
+Setting up libxvidcore4:i386 (2:1.3.4-1) ...
+Setting up libzvbi-common (0.2.35-10) ...
+Setting up libzvbi0:i386 (0.2.35-10) ...
+Setting up libavcodec-ffmpeg56:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libass5:i386 (0.13.1-1) ...
+Setting up libbluray1:i386 (1:0.9.2-2) ...
+Setting up libgme0:i386 (0.6.0-3ubuntu0.16.04.1) ...
+Setting up libmodplug1:i386 (1:0.8.8.5-2) ...
+Setting up libssh-gcrypt-4:i386 (0.6.3-4.3ubuntu0.2) ...
+Setting up libavformat-ffmpeg56:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libavresample-ffmpeg2:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libbs2b0:i386 (3.1.0+dfsg-2.2) ...
+Setting up libflite1:i386 (2.0.0-release-1) ...
+Setting up libtbb2:i386 (4.4~20151115-0ubuntu3) ...
+Setting up libopencv-core2.4v5:i386 (2.4.9.1+dfsg-1.5ubuntu1.1) ...
+Setting up libopencv-imgproc2.4v5:i386 (2.4.9.1+dfsg-1.5ubuntu1.1) ...
+Setting up libpostproc-ffmpeg53:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libswscale-ffmpeg3:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libsodium18:i386 (1.0.8-5) ...
+Setting up libzmq5:i386 (4.1.4-7ubuntu0.1) ...
+Setting up libavfilter-ffmpeg5:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libdc1394-22:i386 (2.2.4-1) ...
+Setting up libsdl1.2debian:i386 (1.2.15+dfsg1-3ubuntu0.1) ...
+Setting up libavdevice-ffmpeg56:i386 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libbdplus0:i386 (0.1.2-1) ...
+Setting up libboost-serialization1.58.0:i386 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libboost-thread1.58.0:i386 (1.58.0+dfsg-5ubuntu3.1) ...
+Setting up libcgal11v5:i386 (4.7-4) ...
+Setting up libcoin80v5 (3.1.4~abc9f50+dfsg1-1) ...
+Setting up libdap17v5:i386 (3.15.1-7) ...
+Setting up libdapclient6v5:i386 (3.15.1-7) ...
+Setting up libepsilon1:i386 (0.9.2-3ubuntu1) ...
+Setting up libfaad2:i386 (2.8.0~cvs20150510-1ubuntu0.1) ...
+Setting up libfreexl1:i386 (1.0.2-1ubuntu0.1) ...
+Setting up libgeos-3.5.0 (3.5.0-1ubuntu2) ...
+Setting up libgeos-c1v5 (3.5.0-1ubuntu2) ...
+Setting up libgif7:i386 (5.1.4-0.3~16.04.1) ...
+Setting up libhdf4-0-alt (4.2.10-3.2) ...
+Setting up libsz2:i386 (0.3.2-1) ...
+Setting up libhdf5-10:i386 (1.8.16+docs-4ubuntu1.1) ...
+Setting up libminizip1:i386 (1.1-8) ...
+Setting up liburiparser1:i386 (0.8.4-1) ...
+Setting up libkmlbase1:i386 (1.3.0-1) ...
+Setting up libkmldom1:i386 (1.3.0-1) ...
+Setting up libkmlengine1:i386 (1.3.0-1) ...
+Setting up mysql-common (5.7.28-0ubuntu0.16.04.2) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up libmysqlclient20:i386 (5.7.28-0ubuntu0.16.04.2) ...
+Setting up libnetcdf11 (1:4.4.0-2) ...
+Setting up libodbc1:i386 (2.3.1-4.1) ...
+Setting up proj-data (4.9.2-2) ...
+Setting up libproj9 (4.9.2-2) ...
+Setting up libogdi3.2 (3.2.0~beta2-7.1build1) ...
+Setting up libopenjp2-7:i386 (2.1.2-1.1+deb9u3build0.16.04.1) ...
+Setting up libspatialite7:i386 (4.3.0a-5) ...
+Setting up libxerces-c3.1:i386 (3.1.3+debian-1) ...
+Setting up libgraphicsmagick-q16-3 (1.3.23-1ubuntu0.2) ...
+Setting up libiso9660-8:i386 (0.83-4.2ubuntu1) ...
+Setting up libopenthreads20:i386 (3.2.1-7ubuntu4) ...
+Setting up libqt4-opengl:i386 (4:4.8.7+dfsg-5ubuntu2) ...
+Setting up libxine2-bin (1.2.6-1build5) ...
+Setting up libmad0:i386 (0.15.1b-9ubuntu16.04.1) ...
+Setting up libxine2-ffmpeg (1.2.6-1build5) ...
+Setting up libvcdinfo0 (0.7.24+dfsg-0.2) ...
+Setting up libxine2-misc-plugins (1.2.6-1build5) ...
+Setting up libxine2-plugins (1.2.6-1build5) ...
+Setting up libxine2 (1.2.6-1build5) ...
+Setting up libxine2-doc (1.2.6-1build5) ...
+Setting up mesa-va-drivers:i386 (18.0.5-0ubuntu0~16.04.1) ...
+Setting up postgis-doc (2.2.1+dfsg-2ubuntu0.1) ...
+Setting up postgresql-9.5-postgis-scripts (2.2.1+dfsg-2ubuntu0.1) ...
+Setting up i965-va-driver:i386 (1.7.0-1) ...
+Setting up va-driver-all:i386 (1.7.0-1ubuntu0.1) ...
+Setting up proj-bin (4.9.2-2) ...
+Setting up odbcinst1debian2:i386 (2.3.1-4.1) ...
+Setting up libgdal1i (1.11.3+dfsg-3build2) ...
+Setting up libopenscenegraph100v5:i386 (3.2.1-7ubuntu4) ...
+Setting up libsfcgal1 (1.2.2-1) ...
+Setting up liblwgeom-2.2-5 (2.2.1+dfsg-2ubuntu0.1) ...
+Setting up postgis (2.2.1+dfsg-2ubuntu0.1) ...
+Setting up postgresql-9.5-postgis-2.2 (2.2.1+dfsg-2ubuntu0.1) ...
+Setting up odbcinst (2.3.1-4.1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+navya:~$ sudo apt-get install pgadmin3
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libwxbase3.0-0v5 libwxgtk3.0-0v5 pgadmin3-data pgagent
+Suggested packages:
+  postgresql-contrib
+The following NEW packages will be installed:
+  libwxbase3.0-0v5 libwxgtk3.0-0v5 pgadmin3 pgadmin3-data pgagent
+0 upgraded, 5 newly installed, 0 to remove and 4 not upgraded.
+Need to get 10.4 MB of archives.
+After this operation, 40.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libwxbase3.0-0v5 i386 3.0.2+dfsg-1.3ubuntu0.1 [973 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 libwxgtk3.0-0v5 i386 3.0.2+dfsg-1.3ubuntu0.1 [4,386 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 pgadmin3-data all 1.22.0-1 [1,883 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 pgadmin3 i386 1.22.0-1 [3,073 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu xenial/universe i386 pgagent i386 3.4.1-2 [66.3 kB]
+Fetched 10.4 MB in 1s (9,196 kB/s) 
+Selecting previously unselected package libwxbase3.0-0v5:i386.
+(Reading database ... 179312 files and directories currently installed.)
+Preparing to unpack .../libwxbase3.0-0v5_3.0.2+dfsg-1.3ubuntu0.1_i386.deb ...
+Unpacking libwxbase3.0-0v5:i386 (3.0.2+dfsg-1.3ubuntu0.1) ...
+Selecting previously unselected package libwxgtk3.0-0v5:i386.
+Preparing to unpack .../libwxgtk3.0-0v5_3.0.2+dfsg-1.3ubuntu0.1_i386.deb ...
+Unpacking libwxgtk3.0-0v5:i386 (3.0.2+dfsg-1.3ubuntu0.1) ...
+Selecting previously unselected package pgadmin3-data.
+Preparing to unpack .../pgadmin3-data_1.22.0-1_all.deb ...
+Unpacking pgadmin3-data (1.22.0-1) ...
+Selecting previously unselected package pgadmin3.
+Preparing to unpack .../pgadmin3_1.22.0-1_i386.deb ...
+Unpacking pgadmin3 (1.22.0-1) ...
+Selecting previously unselected package pgagent.
+Preparing to unpack .../pgagent_3.4.1-2_i386.deb ...
+Unpacking pgagent (3.4.1-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for doc-base (0.10.7) ...
+Processing 1 added doc-base file...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20180209-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for postgresql-common (173ubuntu0.3) ...
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Setting up libwxbase3.0-0v5:i386 (3.0.2+dfsg-1.3ubuntu0.1) ...
+Setting up libwxgtk3.0-0v5:i386 (3.0.2+dfsg-1.3ubuntu0.1) ...
+Setting up pgadmin3-data (1.22.0-1) ...
+Setting up pgadmin3 (1.22.0-1) ...
+Setting up pgagent (3.4.1-2) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+navya:~$ sudo -u postgres psql
+psql (9.5.19)
+Type "help" for help.
+
+postgres=# alter user postgres password 'postgres';
+ALTER ROLE
+postgres=# \q
+navya:~$ sudo apt-get install apache2 libapache2-mod-wsgi
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap liblua5.1-0
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapache2-mod-wsgi libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0
+0 upgraded, 10 newly installed, 0 to remove and 4 not upgraded.
+Need to get 1,721 kB of archives.
+After this operation, 6,534 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libapr1 i386 1.5.2-3 [95.1 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libaprutil1 i386 1.5.4-1build1 [82.7 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libaprutil1-dbd-sqlite3 i386 1.5.4-1build1 [10.9 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libaprutil1-ldap i386 1.5.4-1build1 [8,916 B]
+Get:5 http://in.archive.ubuntu.com/ubuntu xenial/main i386 liblua5.1-0 i386 5.1.5-8ubuntu1 [114 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 apache2-bin i386 2.4.18-2ubuntu3.14 [992 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 apache2-utils i386 2.4.18-2ubuntu3.14 [86.8 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 apache2-data all 2.4.18-2ubuntu3.14 [162 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 apache2 i386 2.4.18-2ubuntu3.14 [86.5 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu xenial/main i386 libapache2-mod-wsgi i386 4.3.0-1.1build1 [82.3 kB]
+Fetched 1,721 kB in 0s (5,168 kB/s)            
+Selecting previously unselected package libapr1:i386.
+(Reading database ... 179811 files and directories currently installed.)
+Preparing to unpack .../libapr1_1.5.2-3_i386.deb ...
+Unpacking libapr1:i386 (1.5.2-3) ...
+Selecting previously unselected package libaprutil1:i386.
+Preparing to unpack .../libaprutil1_1.5.4-1build1_i386.deb ...
+Unpacking libaprutil1:i386 (1.5.4-1build1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:i386.
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_i386.deb ...
+Unpacking libaprutil1-dbd-sqlite3:i386 (1.5.4-1build1) ...
+Selecting previously unselected package libaprutil1-ldap:i386.
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_i386.deb ...
+Unpacking libaprutil1-ldap:i386 (1.5.4-1build1) ...
+Selecting previously unselected package liblua5.1-0:i386.
+Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_i386.deb ...
+Unpacking liblua5.1-0:i386 (5.1.5-8ubuntu1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.14_i386.deb ...
+Unpacking apache2-bin (2.4.18-2ubuntu3.14) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.14_i386.deb ...
+Unpacking apache2-utils (2.4.18-2ubuntu3.14) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.14_all.deb ...
+Unpacking apache2-data (2.4.18-2ubuntu3.14) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.18-2ubuntu3.14_i386.deb ...
+Unpacking apache2 (2.4.18-2ubuntu3.14) ...
+Selecting previously unselected package libapache2-mod-wsgi.
+Preparing to unpack .../libapache2-mod-wsgi_4.3.0-1.1build1_i386.deb ...
+Unpacking libapache2-mod-wsgi (4.3.0-1.1build1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.23) ...
+Setting up libapr1:i386 (1.5.2-3) ...
+Setting up libaprutil1:i386 (1.5.4-1build1) ...
+Setting up libaprutil1-dbd-sqlite3:i386 (1.5.4-1build1) ...
+Setting up libaprutil1-ldap:i386 (1.5.4-1build1) ...
+Setting up liblua5.1-0:i386 (5.1.5-8ubuntu1) ...
+Setting up apache2-bin (2.4.18-2ubuntu3.14) ...
+Setting up apache2-utils (2.4.18-2ubuntu3.14) ...
+Setting up apache2-data (2.4.18-2ubuntu3.14) ...
+Setting up apache2 (2.4.18-2ubuntu3.14) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Setting up libapache2-mod-wsgi (4.3.0-1.1build1) ...
+apache2_invoke: Enable module wsgi
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.23) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+navya:~$ cd ~/Downloads
+navya:Downloads$ sudo tar -zxvf istSOS-2.1.1.tar.gz -C /usr/local/
+tar (child): istSOS-2.1.1.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+navya:Downloads$ sudo tar -zxvf istsos-2.3.2.tar.gz -C /usr/local/
+istsos/
+istsos/scheduler.py
+istsos/RFC.txt
+istsos/services/
+istsos/services/default.cfg
+istsos/__init__.py
+istsos/LICENSE.txt
+istsos/VERSION.txt
+istsos/application_walib.py
+istsos/scripts/
+istsos/scripts/update-istsos.py
+istsos/scripts/istsos2istsos.py
+istsos/scripts/converter/
+istsos/scripts/converter/sts.py
+istsos/scripts/converter/__init__.py
+istsos/scripts/converter/kern.py
+istsos/scripts/converter/campbell.py
+istsos/scripts/converter/csv.py
+istsos/scripts/__init__.py
+istsos/scripts/sos_virtualHQ_importer.py
+istsos/scripts/csv2istsos.py
+istsos/scripts/raw2csv.py
+istsos/scripts/user.py
+istsos/scripts/serial2istsos.py
+istsos/scripts/istsos2csv.py
+istsos/scripts/constrain2db.py
+istsos/scripts/sos2istsos.py
+istsos/scripts/registercsv.py
+istsos/scripts/istsosutils.py
+istsos/scripts/applyqi.py
+istsos/scripts/serial2istsos-example.json
+istsos/waconf2sos.py
+istsos/config.py
+istsos/application_wnslib.py
+istsos/runAllTests.py
+istsos/istsoslib/
+istsos/istsoslib/responders/
+istsos/istsoslib/responders/USDresponse.py
+istsos/istsoslib/responders/__init__.py
+istsos/istsoslib/responders/factory_response.py
+istsos/istsoslib/responders/DSresponse.py
+istsos/istsoslib/responders/IOresponse.py
+istsos/istsoslib/responders/GCresponse.py
+istsos/istsoslib/responders/RSresponse.py
+istsos/istsoslib/responders/GOresponse.py
+istsos/istsoslib/responders/GFresponse.py
+istsos/istsoslib/sosUtils.py
+istsos/istsoslib/sos_version.py
+istsos/istsoslib/__init__.py
+istsos/istsoslib/filters/
+istsos/istsoslib/filters/USD_filter.py
+istsos/istsoslib/filters/IO_filter.py
+istsos/istsoslib/filters/filter.py
+istsos/istsoslib/filters/__init__.py
+istsos/istsoslib/filters/GC_filter.py
+istsos/istsoslib/filters/factory_filters.py
+istsos/istsoslib/filters/RS_filter.py
+istsos/istsoslib/filters/DS_filter.py
+istsos/istsoslib/filters/GF_filter.py
+istsos/istsoslib/filters/filter_utils.py
+istsos/istsoslib/filters/GO_filter.py
+istsos/istsoslib/sosException.py
+istsos/istsoslib/renderers/
+istsos/istsoslib/renderers/GCresponseRender.py
+istsos/istsoslib/renderers/IOresponseRender.py
+istsos/istsoslib/renderers/__init__.py
+istsos/istsoslib/renderers/factory_render.py
+istsos/istsoslib/renderers/GFresponseRender.py
+istsos/istsoslib/renderers/DSresponseRender.py
+istsos/istsoslib/renderers/USDresponseRender.py
+istsos/istsoslib/renderers/GOresponseRender.py
+istsos/istsoslib/renderers/RSresponseRender.py
+istsos/istsoslib/sosDatabase.py
+istsos/CLA.txt
+istsos/walib/
+istsos/walib/resource.py
+istsos/walib/wa_version.py
+istsos/walib/__init__.py
+istsos/walib/wa.cfg
+istsos/walib/istsos/
+istsos/walib/istsos/services/
+istsos/walib/istsos/services/observedproperties/
+istsos/walib/istsos/services/observedproperties/observedproperties.py
+istsos/walib/istsos/services/observedproperties/__init__.py
+istsos/walib/istsos/services/systemtypes/
+istsos/walib/istsos/services/systemtypes/systemtypes.py
+istsos/walib/istsos/services/systemtypes/__init__.py
+istsos/walib/istsos/services/virtualprocedures/
+istsos/walib/istsos/services/virtualprocedures/__init__.py
+istsos/walib/istsos/services/virtualprocedures/ratingcurve.py
+istsos/walib/istsos/services/virtualprocedures/virtualprocedures.py
+istsos/walib/istsos/services/virtualprocedures/code.py
+istsos/walib/istsos/services/epsgs/
+istsos/walib/istsos/services/epsgs/__init__.py
+istsos/walib/istsos/services/epsgs/epsgs.py
+istsos/walib/istsos/services/__init__.py
+istsos/walib/istsos/services/procedures/
+istsos/walib/istsos/services/procedures/__init__.py
+istsos/walib/istsos/services/procedures/procedures.py
+istsos/walib/istsos/services/services.py
+istsos/walib/istsos/services/configsections/
+istsos/walib/istsos/services/configsections/__init__.py
+istsos/walib/istsos/services/configsections/mqtt.py
+istsos/walib/istsos/services/configsections/provider.py
+istsos/walib/istsos/services/configsections/configsections.py
+istsos/walib/istsos/services/configsections/connection.py
+istsos/walib/istsos/services/configsections/geo.py
+istsos/walib/istsos/services/configsections/serviceurl.py
+istsos/walib/istsos/services/configsections/identification.py
+istsos/walib/istsos/services/configsections/getobservation.py
+istsos/walib/istsos/services/configsections/urn.py
+istsos/walib/istsos/services/uoms/
+istsos/walib/istsos/services/uoms/__init__.py
+istsos/walib/istsos/services/uoms/uoms.py
+istsos/walib/istsos/services/offerings/
+istsos/walib/istsos/services/offerings/__init__.py
+istsos/walib/istsos/services/offerings/procedures/
+istsos/walib/istsos/services/offerings/procedures/__init__.py
+istsos/walib/istsos/services/offerings/procedures/procedures.py
+istsos/walib/istsos/services/offerings/offerings.py
+istsos/walib/istsos/services/logs/
+istsos/walib/istsos/services/logs/__init__.py
+istsos/walib/istsos/services/logs/logs.py
+istsos/walib/istsos/services/dataqualities/
+istsos/walib/istsos/services/dataqualities/__init__.py
+istsos/walib/istsos/services/dataqualities/dataqualities.py
+istsos/walib/istsos/services/status/
+istsos/walib/istsos/services/status/__init__.py
+istsos/walib/istsos/services/status/status.py
+istsos/walib/istsos/__init__.py
+istsos/walib/istsos/istsos.py
+istsos/walib/procedure.py
+istsos/walib/resourceFactory.py
+istsos/walib/databaseManager.py
+istsos/walib/configManager.py
+istsos/walib/users.py
+istsos/walib/sqlschema.py
+istsos/walib/utils.py
+istsos/walib/admin/
+istsos/walib/admin/__init__.py
+istsos/walib/admin/configsections/
+istsos/walib/admin/configsections/__init__.py
+istsos/walib/admin/configsections/paths.py
+istsos/walib/admin/configsections/configsections.py
+istsos/lib/
+istsos/lib/oauthlib/
+istsos/lib/oauthlib/uri_validate.py
+istsos/lib/oauthlib/common.py
+istsos/lib/oauthlib/__init__.py
+istsos/lib/oauthlib/oauth1/
+istsos/lib/oauthlib/oauth1/__init__.py
+istsos/lib/oauthlib/oauth1/rfc5849/
+istsos/lib/oauthlib/oauth1/rfc5849/errors.py
+istsos/lib/oauthlib/oauth1/rfc5849/__init__.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/resource.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/access_token.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/authorization.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/__init__.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/base.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/pre_configured.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/request_token.py
+istsos/lib/oauthlib/oauth1/rfc5849/endpoints/signature_only.py
+istsos/lib/oauthlib/oauth1/rfc5849/parameters.py
+istsos/lib/oauthlib/oauth1/rfc5849/signature.py
+istsos/lib/oauthlib/oauth1/rfc5849/utils.py
+istsos/lib/oauthlib/oauth1/rfc5849/request_validator.py
+istsos/lib/oauthlib/oauth2/
+istsos/lib/oauthlib/oauth2/__init__.py
+istsos/lib/oauthlib/oauth2/rfc6749/
+istsos/lib/oauthlib/oauth2/rfc6749/tokens.py
+istsos/lib/oauthlib/oauth2/rfc6749/errors.py
+istsos/lib/oauthlib/oauth2/rfc6749/__init__.py
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/resource.py
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/revocation.py
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/authorization.py
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/__init__.py
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/token.py
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/base.py
+istsos/lib/oauthlib/oauth2/rfc6749/endpoints/pre_configured.py
+istsos/lib/oauthlib/oauth2/rfc6749/parameters.py
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/authorization_code.py
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/refresh_token.py
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/__init__.py
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/implicit.py
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/base.py
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/resource_owner_password_credentials.py
+istsos/lib/oauthlib/oauth2/rfc6749/grant_types/client_credentials.py
+istsos/lib/oauthlib/oauth2/rfc6749/clients/
+istsos/lib/oauthlib/oauth2/rfc6749/clients/mobile_application.py
+istsos/lib/oauthlib/oauth2/rfc6749/clients/__init__.py
+istsos/lib/oauthlib/oauth2/rfc6749/clients/service_application.py
+istsos/lib/oauthlib/oauth2/rfc6749/clients/legacy_application.py
+istsos/lib/oauthlib/oauth2/rfc6749/clients/web_application.py
+istsos/lib/oauthlib/oauth2/rfc6749/clients/base.py
+istsos/lib/oauthlib/oauth2/rfc6749/clients/backend_application.py
+istsos/lib/oauthlib/oauth2/rfc6749/utils.py
+istsos/lib/oauthlib/oauth2/rfc6749/request_validator.py
+istsos/lib/oauthlib/signals.py
+istsos/lib/argparse.py
+istsos/lib/__init__.py
+istsos/lib/twitter/
+istsos/lib/twitter/error.py
+istsos/lib/twitter/__init__.py
+istsos/lib/twitter/status.py
+istsos/lib/twitter/user.py
+istsos/lib/twitter/parse_tweet.py
+istsos/lib/twitter/api.py
+istsos/lib/twitter/direct_message.py
+istsos/lib/twitter/trend.py
+istsos/lib/twitter/list.py
+istsos/lib/twitter/hashtag.py
+istsos/lib/twitter/url.py
+istsos/lib/twitter/_file_cache.py
+istsos/lib/requests/
+istsos/lib/requests/structures.py
+istsos/lib/requests/compat.py
+istsos/lib/requests/__init__.py
+istsos/lib/requests/hooks.py
+istsos/lib/requests/status_codes.py
+istsos/lib/requests/cookies.py
+istsos/lib/requests/cacert.pem
+istsos/lib/requests/api.py
+istsos/lib/requests/packages/
+istsos/lib/requests/packages/urllib3/
+istsos/lib/requests/packages/urllib3/poolmanager.py
+istsos/lib/requests/packages/urllib3/connectionpool.py
+istsos/lib/requests/packages/urllib3/__init__.py
+istsos/lib/requests/packages/urllib3/util/
+istsos/lib/requests/packages/urllib3/util/__init__.py
+istsos/lib/requests/packages/urllib3/util/retry.py
+istsos/lib/requests/packages/urllib3/util/ssl_.py
+istsos/lib/requests/packages/urllib3/util/request.py
+istsos/lib/requests/packages/urllib3/util/connection.py
+istsos/lib/requests/packages/urllib3/util/response.py
+istsos/lib/requests/packages/urllib3/util/timeout.py
+istsos/lib/requests/packages/urllib3/util/url.py
+istsos/lib/requests/packages/urllib3/packages/
+istsos/lib/requests/packages/urllib3/packages/__init__.py
+istsos/lib/requests/packages/urllib3/packages/ssl_match_hostname/
+istsos/lib/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py
+istsos/lib/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py
+istsos/lib/requests/packages/urllib3/packages/six.py
+istsos/lib/requests/packages/urllib3/packages/ordered_dict.py
+istsos/lib/requests/packages/urllib3/filepost.py
+istsos/lib/requests/packages/urllib3/fields.py
+istsos/lib/requests/packages/urllib3/request.py
+istsos/lib/requests/packages/urllib3/connection.py
+istsos/lib/requests/packages/urllib3/response.py
+istsos/lib/requests/packages/urllib3/exceptions.py
+istsos/lib/requests/packages/urllib3/contrib/
+istsos/lib/requests/packages/urllib3/contrib/ntlmpool.py
+istsos/lib/requests/packages/urllib3/contrib/__init__.py
+istsos/lib/requests/packages/urllib3/contrib/pyopenssl.py
+istsos/lib/requests/packages/urllib3/_collections.py
+istsos/lib/requests/packages/__init__.py
+istsos/lib/requests/packages/chardet/
+istsos/lib/requests/packages/chardet/cp949prober.py
+istsos/lib/requests/packages/chardet/chardetect.py
+istsos/lib/requests/packages/chardet/sbcsgroupprober.py
+istsos/lib/requests/packages/chardet/compat.py
+istsos/lib/requests/packages/chardet/__init__.py
+istsos/lib/requests/packages/chardet/latin1prober.py
+istsos/lib/requests/packages/chardet/langhungarianmodel.py
+istsos/lib/requests/packages/chardet/langbulgarianmodel.py
+istsos/lib/requests/packages/chardet/euckrfreq.py
+istsos/lib/requests/packages/chardet/sbcharsetprober.py
+istsos/lib/requests/packages/chardet/escprober.py
+istsos/lib/requests/packages/chardet/euckrprober.py
+istsos/lib/requests/packages/chardet/constants.py
+istsos/lib/requests/packages/chardet/charsetprober.py
+istsos/lib/requests/packages/chardet/langhebrewmodel.py
+istsos/lib/requests/packages/chardet/mbcsgroupprober.py
+istsos/lib/requests/packages/chardet/hebrewprober.py
+istsos/lib/requests/packages/chardet/universaldetector.py
+istsos/lib/requests/packages/chardet/eucjpprober.py
+istsos/lib/requests/packages/chardet/langgreekmodel.py
+istsos/lib/requests/packages/chardet/jpcntx.py
+istsos/lib/requests/packages/chardet/sjisprober.py
+istsos/lib/requests/packages/chardet/euctwfreq.py
+istsos/lib/requests/packages/chardet/escsm.py
+istsos/lib/requests/packages/chardet/big5freq.py
+istsos/lib/requests/packages/chardet/codingstatemachine.py
+istsos/lib/requests/packages/chardet/big5prober.py
+istsos/lib/requests/packages/chardet/jisfreq.py
+istsos/lib/requests/packages/chardet/gb2312freq.py
+istsos/lib/requests/packages/chardet/mbcssm.py
+istsos/lib/requests/packages/chardet/chardistribution.py
+istsos/lib/requests/packages/chardet/langcyrillicmodel.py
+istsos/lib/requests/packages/chardet/euctwprober.py
+istsos/lib/requests/packages/chardet/charsetgroupprober.py
+istsos/lib/requests/packages/chardet/langthaimodel.py
+istsos/lib/requests/packages/chardet/mbcharsetprober.py
+istsos/lib/requests/packages/chardet/utf8prober.py
+istsos/lib/requests/packages/chardet/gb2312prober.py
+istsos/lib/requests/packages/README.rst
+istsos/lib/requests/models.py
+istsos/lib/requests/auth.py
+istsos/lib/requests/sessions.py
+istsos/lib/requests/certs.py
+istsos/lib/requests/adapters.py
+istsos/lib/requests/exceptions.py
+istsos/lib/requests/utils.py
+istsos/lib/apscheduler/
+istsos/lib/apscheduler/scheduler.py
+istsos/lib/apscheduler/events.py
+istsos/lib/apscheduler/__init__.py
+istsos/lib/apscheduler/jobstores/
+istsos/lib/apscheduler/jobstores/__init__.py
+istsos/lib/apscheduler/jobstores/mongodb_store.py
+istsos/lib/apscheduler/jobstores/shelve_store.py
+istsos/lib/apscheduler/jobstores/sqlalchemy_store.py
+istsos/lib/apscheduler/jobstores/base.py
+istsos/lib/apscheduler/jobstores/ram_store.py
+istsos/lib/apscheduler/jobstores/redis_store.py
+istsos/lib/apscheduler/threadpool.py
+istsos/lib/apscheduler/util.py
+istsos/lib/apscheduler/triggers/
+istsos/lib/apscheduler/triggers/__init__.py
+istsos/lib/apscheduler/triggers/interval.py
+istsos/lib/apscheduler/triggers/cron/
+istsos/lib/apscheduler/triggers/cron/__init__.py
+istsos/lib/apscheduler/triggers/cron/fields.py
+istsos/lib/apscheduler/triggers/cron/expressions.py
+istsos/lib/apscheduler/triggers/simple.py
+istsos/lib/apscheduler/job.py
+istsos/lib/pytz/
+istsos/lib/pytz/__init__.py
+istsos/lib/pytz/tzinfo.py
+istsos/lib/pytz/zoneinfo/
+istsos/lib/pytz/zoneinfo/MET
+istsos/lib/pytz/zoneinfo/Atlantic/
+istsos/lib/pytz/zoneinfo/Atlantic/Reykjavik
+istsos/lib/pytz/zoneinfo/Atlantic/Azores
+istsos/lib/pytz/zoneinfo/Atlantic/South_Georgia
+istsos/lib/pytz/zoneinfo/Atlantic/Cape_Verde
+istsos/lib/pytz/zoneinfo/Atlantic/Faeroe
+istsos/lib/pytz/zoneinfo/Atlantic/St_Helena
+istsos/lib/pytz/zoneinfo/Atlantic/Bermuda
+istsos/lib/pytz/zoneinfo/Atlantic/Canary
+istsos/lib/pytz/zoneinfo/Atlantic/Jan_Mayen
+istsos/lib/pytz/zoneinfo/Atlantic/Madeira
+istsos/lib/pytz/zoneinfo/Atlantic/Stanley
+istsos/lib/pytz/zoneinfo/Atlantic/Faroe
+istsos/lib/pytz/zoneinfo/WET
+istsos/lib/pytz/zoneinfo/Arctic/
+istsos/lib/pytz/zoneinfo/Arctic/Longyearbyen
+istsos/lib/pytz/zoneinfo/posixrules
+istsos/lib/pytz/zoneinfo/Pacific/
+istsos/lib/pytz/zoneinfo/Pacific/Midway
+istsos/lib/pytz/zoneinfo/Pacific/Norfolk
+istsos/lib/pytz/zoneinfo/Pacific/Palau
+istsos/lib/pytz/zoneinfo/Pacific/Kosrae
+istsos/lib/pytz/zoneinfo/Pacific/Fakaofo
+istsos/lib/pytz/zoneinfo/Pacific/Galapagos
+istsos/lib/pytz/zoneinfo/Pacific/Bougainville
+istsos/lib/pytz/zoneinfo/Pacific/Nauru
+istsos/lib/pytz/zoneinfo/Pacific/Samoa
+istsos/lib/pytz/zoneinfo/Pacific/Marquesas
+istsos/lib/pytz/zoneinfo/Pacific/Honolulu
+istsos/lib/pytz/zoneinfo/Pacific/Fiji
+istsos/lib/pytz/zoneinfo/Pacific/Port_Moresby
+istsos/lib/pytz/zoneinfo/Pacific/Funafuti
+istsos/lib/pytz/zoneinfo/Pacific/Apia
+istsos/lib/pytz/zoneinfo/Pacific/Yap
+istsos/lib/pytz/zoneinfo/Pacific/Majuro
+istsos/lib/pytz/zoneinfo/Pacific/Rarotonga
+istsos/lib/pytz/zoneinfo/Pacific/Gambier
+istsos/lib/pytz/zoneinfo/Pacific/Pohnpei
+istsos/lib/pytz/zoneinfo/Pacific/Wallis
+istsos/lib/pytz/zoneinfo/Pacific/Tarawa
+istsos/lib/pytz/zoneinfo/Pacific/Enderbury
+istsos/lib/pytz/zoneinfo/Pacific/Guam
+istsos/lib/pytz/zoneinfo/Pacific/Truk
+istsos/lib/pytz/zoneinfo/Pacific/Pago_Pago
+istsos/lib/pytz/zoneinfo/Pacific/Ponape
+istsos/lib/pytz/zoneinfo/Pacific/Easter
+istsos/lib/pytz/zoneinfo/Pacific/Guadalcanal
+istsos/lib/pytz/zoneinfo/Pacific/Pitcairn
+istsos/lib/pytz/zoneinfo/Pacific/Noumea
+istsos/lib/pytz/zoneinfo/Pacific/Wake
+istsos/lib/pytz/zoneinfo/Pacific/Kwajalein
+istsos/lib/pytz/zoneinfo/Pacific/Chatham
+istsos/lib/pytz/zoneinfo/Pacific/Tongatapu
+istsos/lib/pytz/zoneinfo/Pacific/Chuuk
+istsos/lib/pytz/zoneinfo/Pacific/Niue
+istsos/lib/pytz/zoneinfo/Pacific/Johnston
+istsos/lib/pytz/zoneinfo/Pacific/Tahiti
+istsos/lib/pytz/zoneinfo/Pacific/Efate
+istsos/lib/pytz/zoneinfo/Pacific/Saipan
+istsos/lib/pytz/zoneinfo/Pacific/Kiritimati
+istsos/lib/pytz/zoneinfo/Pacific/Auckland
+istsos/lib/pytz/zoneinfo/Brazil/
+istsos/lib/pytz/zoneinfo/Brazil/DeNoronha
+istsos/lib/pytz/zoneinfo/Brazil/Acre
+istsos/lib/pytz/zoneinfo/Brazil/East
+istsos/lib/pytz/zoneinfo/Brazil/West
+istsos/lib/pytz/zoneinfo/Singapore
+istsos/lib/pytz/zoneinfo/EET
+istsos/lib/pytz/zoneinfo/GMT
+istsos/lib/pytz/zoneinfo/Portugal
+istsos/lib/pytz/zoneinfo/Zulu
+istsos/lib/pytz/zoneinfo/Africa/
+istsos/lib/pytz/zoneinfo/Africa/Lusaka
+istsos/lib/pytz/zoneinfo/Africa/Blantyre
+istsos/lib/pytz/zoneinfo/Africa/Khartoum
+istsos/lib/pytz/zoneinfo/Africa/Maputo
+istsos/lib/pytz/zoneinfo/Africa/Bissau
+istsos/lib/pytz/zoneinfo/Africa/Kigali
+istsos/lib/pytz/zoneinfo/Africa/Windhoek
+istsos/lib/pytz/zoneinfo/Africa/Dar_es_Salaam
+istsos/lib/pytz/zoneinfo/Africa/Libreville
+istsos/lib/pytz/zoneinfo/Africa/El_Aaiun
+istsos/lib/pytz/zoneinfo/Africa/Djibouti
+istsos/lib/pytz/zoneinfo/Africa/Accra
+istsos/lib/pytz/zoneinfo/Africa/Bamako
+istsos/lib/pytz/zoneinfo/Africa/Casablanca
+istsos/lib/pytz/zoneinfo/Africa/Nairobi
+istsos/lib/pytz/zoneinfo/Africa/Addis_Ababa
+istsos/lib/pytz/zoneinfo/Africa/Gaborone
+istsos/lib/pytz/zoneinfo/Africa/Niamey
+istsos/lib/pytz/zoneinfo/Africa/Freetown
+istsos/lib/pytz/zoneinfo/Africa/Timbuktu
+istsos/lib/pytz/zoneinfo/Africa/Tunis
+istsos/lib/pytz/zoneinfo/Africa/Asmera
+istsos/lib/pytz/zoneinfo/Africa/Dakar
+istsos/lib/pytz/zoneinfo/Africa/Tripoli
+istsos/lib/pytz/zoneinfo/Africa/Algiers
+istsos/lib/pytz/zoneinfo/Africa/Banjul
+istsos/lib/pytz/zoneinfo/Africa/Mogadishu
+istsos/lib/pytz/zoneinfo/Africa/Johannesburg
+istsos/lib/pytz/zoneinfo/Africa/Ouagadougou
+istsos/lib/pytz/zoneinfo/Africa/Abidjan
+istsos/lib/pytz/zoneinfo/Africa/Bangui
+istsos/lib/pytz/zoneinfo/Africa/Malabo
+istsos/lib/pytz/zoneinfo/Africa/Kinshasa
+istsos/lib/pytz/zoneinfo/Africa/Porto-Novo
+istsos/lib/pytz/zoneinfo/Africa/Kampala
+istsos/lib/pytz/zoneinfo/Africa/Douala
+istsos/lib/pytz/zoneinfo/Africa/Harare
+istsos/lib/pytz/zoneinfo/Africa/Luanda
+istsos/lib/pytz/zoneinfo/Africa/Ceuta
+istsos/lib/pytz/zoneinfo/Africa/Lubumbashi
+istsos/lib/pytz/zoneinfo/Africa/Mbabane
+istsos/lib/pytz/zoneinfo/Africa/Lagos
+istsos/lib/pytz/zoneinfo/Africa/Nouakchott
+istsos/lib/pytz/zoneinfo/Africa/Sao_Tome
+istsos/lib/pytz/zoneinfo/Africa/Lome
+istsos/lib/pytz/zoneinfo/Africa/Monrovia
+istsos/lib/pytz/zoneinfo/Africa/Brazzaville
+istsos/lib/pytz/zoneinfo/Africa/Maseru
+istsos/lib/pytz/zoneinfo/Africa/Juba
+istsos/lib/pytz/zoneinfo/Africa/Conakry
+istsos/lib/pytz/zoneinfo/Africa/Cairo
+istsos/lib/pytz/zoneinfo/Africa/Ndjamena
+istsos/lib/pytz/zoneinfo/Africa/Asmara
+istsos/lib/pytz/zoneinfo/Africa/Bujumbura
+istsos/lib/pytz/zoneinfo/HST
+istsos/lib/pytz/zoneinfo/EST
+istsos/lib/pytz/zoneinfo/PRC
+istsos/lib/pytz/zoneinfo/Iceland
+istsos/lib/pytz/zoneinfo/MST
+istsos/lib/pytz/zoneinfo/ROK
+istsos/lib/pytz/zoneinfo/Hongkong
+istsos/lib/pytz/zoneinfo/CST6CDT
+istsos/lib/pytz/zoneinfo/Navajo
+istsos/lib/pytz/zoneinfo/Libya
+istsos/lib/pytz/zoneinfo/Eire
+istsos/lib/pytz/zoneinfo/Turkey
+istsos/lib/pytz/zoneinfo/America/
+istsos/lib/pytz/zoneinfo/America/Swift_Current
+istsos/lib/pytz/zoneinfo/America/Rankin_Inlet
+istsos/lib/pytz/zoneinfo/America/Ensenada
+istsos/lib/pytz/zoneinfo/America/North_Dakota/
+istsos/lib/pytz/zoneinfo/America/North_Dakota/Center
+istsos/lib/pytz/zoneinfo/America/North_Dakota/Beulah
+istsos/lib/pytz/zoneinfo/America/North_Dakota/New_Salem
+istsos/lib/pytz/zoneinfo/America/Cayman
+istsos/lib/pytz/zoneinfo/America/Montevideo
+istsos/lib/pytz/zoneinfo/America/Asuncion
+istsos/lib/pytz/zoneinfo/America/Bogota
+istsos/lib/pytz/zoneinfo/America/Tortola
+istsos/lib/pytz/zoneinfo/America/St_Johns
+istsos/lib/pytz/zoneinfo/America/Indianapolis
+istsos/lib/pytz/zoneinfo/America/Fort_Wayne
+istsos/lib/pytz/zoneinfo/America/Puerto_Rico
+istsos/lib/pytz/zoneinfo/America/Sitka
+istsos/lib/pytz/zoneinfo/America/Tijuana
+istsos/lib/pytz/zoneinfo/America/Indiana/
+istsos/lib/pytz/zoneinfo/America/Indiana/Indianapolis
+istsos/lib/pytz/zoneinfo/America/Indiana/Tell_City
+istsos/lib/pytz/zoneinfo/America/Indiana/Petersburg
+istsos/lib/pytz/zoneinfo/America/Indiana/Vevay
+istsos/lib/pytz/zoneinfo/America/Indiana/Winamac
+istsos/lib/pytz/zoneinfo/America/Indiana/Marengo
+istsos/lib/pytz/zoneinfo/America/Indiana/Knox
+istsos/lib/pytz/zoneinfo/America/Indiana/Vincennes
+istsos/lib/pytz/zoneinfo/America/St_Kitts
+istsos/lib/pytz/zoneinfo/America/Metlakatla
+istsos/lib/pytz/zoneinfo/America/Belize
+istsos/lib/pytz/zoneinfo/America/Montserrat
+istsos/lib/pytz/zoneinfo/America/Tegucigalpa
+istsos/lib/pytz/zoneinfo/America/Guatemala
+istsos/lib/pytz/zoneinfo/America/Creston
+istsos/lib/pytz/zoneinfo/America/Matamoros
+istsos/lib/pytz/zoneinfo/America/Santarem
+istsos/lib/pytz/zoneinfo/America/Santo_Domingo
+istsos/lib/pytz/zoneinfo/America/Jujuy
+istsos/lib/pytz/zoneinfo/America/Port_of_Spain
+istsos/lib/pytz/zoneinfo/America/Inuvik
+istsos/lib/pytz/zoneinfo/America/St_Vincent
+istsos/lib/pytz/zoneinfo/America/Hermosillo
+istsos/lib/pytz/zoneinfo/America/Denver
+istsos/lib/pytz/zoneinfo/America/Kentucky/
+istsos/lib/pytz/zoneinfo/America/Kentucky/Monticello
+istsos/lib/pytz/zoneinfo/America/Kentucky/Louisville
+istsos/lib/pytz/zoneinfo/America/Caracas
+istsos/lib/pytz/zoneinfo/America/Nipigon
+istsos/lib/pytz/zoneinfo/America/Grand_Turk
+istsos/lib/pytz/zoneinfo/America/Toronto
+istsos/lib/pytz/zoneinfo/America/Campo_Grande
+istsos/lib/pytz/zoneinfo/America/Juneau
+istsos/lib/pytz/zoneinfo/America/Anguilla
+istsos/lib/pytz/zoneinfo/America/Fortaleza
+istsos/lib/pytz/zoneinfo/America/Bahia_Banderas
+istsos/lib/pytz/zoneinfo/America/Recife
+istsos/lib/pytz/zoneinfo/America/Pangnirtung
+istsos/lib/pytz/zoneinfo/America/Menominee
+istsos/lib/pytz/zoneinfo/America/Yakutat
+istsos/lib/pytz/zoneinfo/America/Dominica
+istsos/lib/pytz/zoneinfo/America/Guadeloupe
+istsos/lib/pytz/zoneinfo/America/Montreal
+istsos/lib/pytz/zoneinfo/America/Mazatlan
+istsos/lib/pytz/zoneinfo/America/Cuiaba
+istsos/lib/pytz/zoneinfo/America/New_York
+istsos/lib/pytz/zoneinfo/America/Monterrey
+istsos/lib/pytz/zoneinfo/America/Port-au-Prince
+istsos/lib/pytz/zoneinfo/America/Yellowknife
+istsos/lib/pytz/zoneinfo/America/Virgin
+istsos/lib/pytz/zoneinfo/America/Eirunepe
+istsos/lib/pytz/zoneinfo/America/Edmonton
+istsos/lib/pytz/zoneinfo/America/Nome
+istsos/lib/pytz/zoneinfo/America/St_Lucia
+istsos/lib/pytz/zoneinfo/America/Sao_Paulo
+istsos/lib/pytz/zoneinfo/America/St_Thomas
+istsos/lib/pytz/zoneinfo/America/Araguaina
+istsos/lib/pytz/zoneinfo/America/Chicago
+istsos/lib/pytz/zoneinfo/America/Rosario
+istsos/lib/pytz/zoneinfo/America/Iqaluit
+istsos/lib/pytz/zoneinfo/America/Resolute
+istsos/lib/pytz/zoneinfo/America/Phoenix
+istsos/lib/pytz/zoneinfo/America/Thunder_Bay
+istsos/lib/pytz/zoneinfo/America/Shiprock
+istsos/lib/pytz/zoneinfo/America/Antigua
+istsos/lib/pytz/zoneinfo/America/Los_Angeles
+istsos/lib/pytz/zoneinfo/America/Danmarkshavn
+istsos/lib/pytz/zoneinfo/America/Kralendijk
+istsos/lib/pytz/zoneinfo/America/Boise
+istsos/lib/pytz/zoneinfo/America/Bahia
+istsos/lib/pytz/zoneinfo/America/Lower_Princes
+istsos/lib/pytz/zoneinfo/America/Rio_Branco
+istsos/lib/pytz/zoneinfo/America/Curacao
+istsos/lib/pytz/zoneinfo/America/Louisville
+istsos/lib/pytz/zoneinfo/America/Atikokan
+istsos/lib/pytz/zoneinfo/America/Panama
+istsos/lib/pytz/zoneinfo/America/Catamarca
+istsos/lib/pytz/zoneinfo/America/Glace_Bay
+istsos/lib/pytz/zoneinfo/America/Belem
+istsos/lib/pytz/zoneinfo/America/Santiago
+istsos/lib/pytz/zoneinfo/America/Ojinaga
+istsos/lib/pytz/zoneinfo/America/Coral_Harbour
+istsos/lib/pytz/zoneinfo/America/Managua
+istsos/lib/pytz/zoneinfo/America/Boa_Vista
+istsos/lib/pytz/zoneinfo/America/Detroit
+istsos/lib/pytz/zoneinfo/America/Knox_IN
+istsos/lib/pytz/zoneinfo/America/Argentina/
+istsos/lib/pytz/zoneinfo/America/Argentina/La_Rioja
+istsos/lib/pytz/zoneinfo/America/Argentina/Jujuy
+istsos/lib/pytz/zoneinfo/America/Argentina/ComodRivadavia
+istsos/lib/pytz/zoneinfo/America/Argentina/San_Juan
+istsos/lib/pytz/zoneinfo/America/Argentina/Rio_Gallegos
+istsos/lib/pytz/zoneinfo/America/Argentina/Catamarca
+istsos/lib/pytz/zoneinfo/America/Argentina/Cordoba
+istsos/lib/pytz/zoneinfo/America/Argentina/Salta
+istsos/lib/pytz/zoneinfo/America/Argentina/Tucuman
+istsos/lib/pytz/zoneinfo/America/Argentina/San_Luis
+istsos/lib/pytz/zoneinfo/America/Argentina/Ushuaia
+istsos/lib/pytz/zoneinfo/America/Argentina/Mendoza
+istsos/lib/pytz/zoneinfo/America/Argentina/Buenos_Aires
+istsos/lib/pytz/zoneinfo/America/Cambridge_Bay
+istsos/lib/pytz/zoneinfo/America/Cordoba
+istsos/lib/pytz/zoneinfo/America/Chihuahua
+istsos/lib/pytz/zoneinfo/America/Whitehorse
+istsos/lib/pytz/zoneinfo/America/Mexico_City
+istsos/lib/pytz/zoneinfo/America/Regina
+istsos/lib/pytz/zoneinfo/America/St_Barthelemy
+istsos/lib/pytz/zoneinfo/America/Porto_Acre
+istsos/lib/pytz/zoneinfo/America/Aruba
+istsos/lib/pytz/zoneinfo/America/Moncton
+istsos/lib/pytz/zoneinfo/America/Anchorage
+istsos/lib/pytz/zoneinfo/America/Nassau
+istsos/lib/pytz/zoneinfo/America/Dawson
+istsos/lib/pytz/zoneinfo/America/Dawson_Creek
+istsos/lib/pytz/zoneinfo/America/Atka
+istsos/lib/pytz/zoneinfo/America/Martinique
+istsos/lib/pytz/zoneinfo/America/Blanc-Sablon
+istsos/lib/pytz/zoneinfo/America/El_Salvador
+istsos/lib/pytz/zoneinfo/America/Lima
+istsos/lib/pytz/zoneinfo/America/La_Paz
+istsos/lib/pytz/zoneinfo/America/Marigot
+istsos/lib/pytz/zoneinfo/America/Porto_Velho
+istsos/lib/pytz/zoneinfo/America/Manaus
+istsos/lib/pytz/zoneinfo/America/Maceio
+istsos/lib/pytz/zoneinfo/America/Costa_Rica
+istsos/lib/pytz/zoneinfo/America/Winnipeg
+istsos/lib/pytz/zoneinfo/America/Havana
+istsos/lib/pytz/zoneinfo/America/Rainy_River
+istsos/lib/pytz/zoneinfo/America/Barbados
+istsos/lib/pytz/zoneinfo/America/Grenada
+istsos/lib/pytz/zoneinfo/America/Cayenne
+istsos/lib/pytz/zoneinfo/America/Vancouver
+istsos/lib/pytz/zoneinfo/America/Guyana
+istsos/lib/pytz/zoneinfo/America/Goose_Bay
+istsos/lib/pytz/zoneinfo/America/Thule
+istsos/lib/pytz/zoneinfo/America/Cancun
+istsos/lib/pytz/zoneinfo/America/Scoresbysund
+istsos/lib/pytz/zoneinfo/America/Noronha
+istsos/lib/pytz/zoneinfo/America/Adak
+istsos/lib/pytz/zoneinfo/America/Merida
+istsos/lib/pytz/zoneinfo/America/Halifax
+istsos/lib/pytz/zoneinfo/America/Jamaica
+istsos/lib/pytz/zoneinfo/America/Godthab
+istsos/lib/pytz/zoneinfo/America/Santa_Isabel
+istsos/lib/pytz/zoneinfo/America/Paramaribo
+istsos/lib/pytz/zoneinfo/America/Mendoza
+istsos/lib/pytz/zoneinfo/America/Buenos_Aires
+istsos/lib/pytz/zoneinfo/America/Miquelon
+istsos/lib/pytz/zoneinfo/America/Guayaquil
+istsos/lib/pytz/zoneinfo/UCT
+istsos/lib/pytz/zoneinfo/Canada/
+istsos/lib/pytz/zoneinfo/Canada/Atlantic
+istsos/lib/pytz/zoneinfo/Canada/Pacific
+istsos/lib/pytz/zoneinfo/Canada/Newfoundland
+istsos/lib/pytz/zoneinfo/Canada/Eastern
+istsos/lib/pytz/zoneinfo/Canada/Central
+istsos/lib/pytz/zoneinfo/Canada/Mountain
+istsos/lib/pytz/zoneinfo/Canada/East-Saskatchewan
+istsos/lib/pytz/zoneinfo/Canada/Yukon
+istsos/lib/pytz/zoneinfo/Canada/Saskatchewan
+istsos/lib/pytz/zoneinfo/ROC
+istsos/lib/pytz/zoneinfo/Etc/
+istsos/lib/pytz/zoneinfo/Etc/GMT-11
+istsos/lib/pytz/zoneinfo/Etc/GMT+1
+istsos/lib/pytz/zoneinfo/Etc/GMT-13
+istsos/lib/pytz/zoneinfo/Etc/GMT-9
+istsos/lib/pytz/zoneinfo/Etc/GMT+7
+istsos/lib/pytz/zoneinfo/Etc/GMT+3
+istsos/lib/pytz/zoneinfo/Etc/GMT
+istsos/lib/pytz/zoneinfo/Etc/GMT+2
+istsos/lib/pytz/zoneinfo/Etc/GMT+11
+istsos/lib/pytz/zoneinfo/Etc/Zulu
+istsos/lib/pytz/zoneinfo/Etc/GMT-1
+istsos/lib/pytz/zoneinfo/Etc/GMT-6
+istsos/lib/pytz/zoneinfo/Etc/GMT+6
+istsos/lib/pytz/zoneinfo/Etc/GMT+4
+istsos/lib/pytz/zoneinfo/Etc/GMT+8
+istsos/lib/pytz/zoneinfo/Etc/GMT-7
+istsos/lib/pytz/zoneinfo/Etc/UCT
+istsos/lib/pytz/zoneinfo/Etc/GMT-10
+istsos/lib/pytz/zoneinfo/Etc/GMT+10
+istsos/lib/pytz/zoneinfo/Etc/GMT-8
+istsos/lib/pytz/zoneinfo/Etc/GMT+9
+istsos/lib/pytz/zoneinfo/Etc/GMT+12
+istsos/lib/pytz/zoneinfo/Etc/GMT-12
+istsos/lib/pytz/zoneinfo/Etc/Greenwich
+istsos/lib/pytz/zoneinfo/Etc/GMT-4
+istsos/lib/pytz/zoneinfo/Etc/GMT-2
+istsos/lib/pytz/zoneinfo/Etc/GMT-0
+istsos/lib/pytz/zoneinfo/Etc/Universal
+istsos/lib/pytz/zoneinfo/Etc/UTC
+istsos/lib/pytz/zoneinfo/Etc/GMT+0
+istsos/lib/pytz/zoneinfo/Etc/GMT-14
+istsos/lib/pytz/zoneinfo/Etc/GMT0
+istsos/lib/pytz/zoneinfo/Etc/GMT-5
+istsos/lib/pytz/zoneinfo/Etc/GMT+5
+istsos/lib/pytz/zoneinfo/Etc/GMT-3
+istsos/lib/pytz/zoneinfo/PST8PDT
+istsos/lib/pytz/zoneinfo/zone.tab
+istsos/lib/pytz/zoneinfo/Antarctica/
+istsos/lib/pytz/zoneinfo/Antarctica/South_Pole
+istsos/lib/pytz/zoneinfo/Antarctica/Mawson
+istsos/lib/pytz/zoneinfo/Antarctica/Troll
+istsos/lib/pytz/zoneinfo/Antarctica/Palmer
+istsos/lib/pytz/zoneinfo/Antarctica/Davis
+istsos/lib/pytz/zoneinfo/Antarctica/McMurdo
+istsos/lib/pytz/zoneinfo/Antarctica/Vostok
+istsos/lib/pytz/zoneinfo/Antarctica/DumontDUrville
+istsos/lib/pytz/zoneinfo/Antarctica/Casey
+istsos/lib/pytz/zoneinfo/Antarctica/Rothera
+istsos/lib/pytz/zoneinfo/Antarctica/Syowa
+istsos/lib/pytz/zoneinfo/Antarctica/Macquarie
+istsos/lib/pytz/zoneinfo/Asia/
+istsos/lib/pytz/zoneinfo/Asia/Tokyo
+istsos/lib/pytz/zoneinfo/Asia/Choibalsan
+istsos/lib/pytz/zoneinfo/Asia/Chita
+istsos/lib/pytz/zoneinfo/Asia/Tel_Aviv
+istsos/lib/pytz/zoneinfo/Asia/Brunei
+istsos/lib/pytz/zoneinfo/Asia/Aqtobe
+istsos/lib/pytz/zoneinfo/Asia/Harbin
+istsos/lib/pytz/zoneinfo/Asia/Pontianak
+istsos/lib/pytz/zoneinfo/Asia/Colombo
+istsos/lib/pytz/zoneinfo/Asia/Singapore
+istsos/lib/pytz/zoneinfo/Asia/Yerevan
+istsos/lib/pytz/zoneinfo/Asia/Hovd
+istsos/lib/pytz/zoneinfo/Asia/Taipei
+istsos/lib/pytz/zoneinfo/Asia/Dacca
+istsos/lib/pytz/zoneinfo/Asia/Dhaka
+istsos/lib/pytz/zoneinfo/Asia/Nicosia
+istsos/lib/pytz/zoneinfo/Asia/Muscat
+istsos/lib/pytz/zoneinfo/Asia/Dushanbe
+istsos/lib/pytz/zoneinfo/Asia/Jakarta
+istsos/lib/pytz/zoneinfo/Asia/Kabul
+istsos/lib/pytz/zoneinfo/Asia/Jerusalem
+istsos/lib/pytz/zoneinfo/Asia/Ulan_Bator
+istsos/lib/pytz/zoneinfo/Asia/Dubai
+istsos/lib/pytz/zoneinfo/Asia/Ulaanbaatar
+istsos/lib/pytz/zoneinfo/Asia/Ashgabat
+istsos/lib/pytz/zoneinfo/Asia/Hebron
+istsos/lib/pytz/zoneinfo/Asia/Macao
+istsos/lib/pytz/zoneinfo/Asia/Tashkent
+istsos/lib/pytz/zoneinfo/Asia/Beirut
+istsos/lib/pytz/zoneinfo/Asia/Irkutsk
+istsos/lib/pytz/zoneinfo/Asia/Bangkok
+istsos/lib/pytz/zoneinfo/Asia/Oral
+istsos/lib/pytz/zoneinfo/Asia/Vientiane
+istsos/lib/pytz/zoneinfo/Asia/Kuwait
+istsos/lib/pytz/zoneinfo/Asia/Gaza
+istsos/lib/pytz/zoneinfo/Asia/Pyongyang
+istsos/lib/pytz/zoneinfo/Asia/Istanbul
+istsos/lib/pytz/zoneinfo/Asia/Kuching
+istsos/lib/pytz/zoneinfo/Asia/Macau
+istsos/lib/pytz/zoneinfo/Asia/Krasnoyarsk
+istsos/lib/pytz/zoneinfo/Asia/Chongqing
+istsos/lib/pytz/zoneinfo/Asia/Dili
+istsos/lib/pytz/zoneinfo/Asia/Bahrain
+istsos/lib/pytz/zoneinfo/Asia/Srednekolymsk
+istsos/lib/pytz/zoneinfo/Asia/Kolkata
+istsos/lib/pytz/zoneinfo/Asia/Urumqi
+istsos/lib/pytz/zoneinfo/Asia/Sakhalin
+istsos/lib/pytz/zoneinfo/Asia/Amman
+istsos/lib/pytz/zoneinfo/Asia/Ashkhabad
+istsos/lib/pytz/zoneinfo/Asia/Shanghai
+istsos/lib/pytz/zoneinfo/Asia/Tbilisi
+istsos/lib/pytz/zoneinfo/Asia/Novosibirsk
+istsos/lib/pytz/zoneinfo/Asia/Yakutsk
+istsos/lib/pytz/zoneinfo/Asia/Jayapura
+istsos/lib/pytz/zoneinfo/Asia/Seoul
+istsos/lib/pytz/zoneinfo/Asia/Katmandu
+istsos/lib/pytz/zoneinfo/Asia/Saigon
+istsos/lib/pytz/zoneinfo/Asia/Almaty
+istsos/lib/pytz/zoneinfo/Asia/Ujung_Pandang
+istsos/lib/pytz/zoneinfo/Asia/Hong_Kong
+istsos/lib/pytz/zoneinfo/Asia/Phnom_Penh
+istsos/lib/pytz/zoneinfo/Asia/Aqtau
+istsos/lib/pytz/zoneinfo/Asia/Ust-Nera
+istsos/lib/pytz/zoneinfo/Asia/Manila
+istsos/lib/pytz/zoneinfo/Asia/Karachi
+istsos/lib/pytz/zoneinfo/Asia/Omsk
+istsos/lib/pytz/zoneinfo/Asia/Kuala_Lumpur
+istsos/lib/pytz/zoneinfo/Asia/Makassar
+istsos/lib/pytz/zoneinfo/Asia/Qyzylorda
+istsos/lib/pytz/zoneinfo/Asia/Ho_Chi_Minh
+istsos/lib/pytz/zoneinfo/Asia/Khandyga
+istsos/lib/pytz/zoneinfo/Asia/Magadan
+istsos/lib/pytz/zoneinfo/Asia/Thimphu
+istsos/lib/pytz/zoneinfo/Asia/Thimbu
+istsos/lib/pytz/zoneinfo/Asia/Tehran
+istsos/lib/pytz/zoneinfo/Asia/Aden
+istsos/lib/pytz/zoneinfo/Asia/Baghdad
+istsos/lib/pytz/zoneinfo/Asia/Riyadh
+istsos/lib/pytz/zoneinfo/Asia/Novokuznetsk
+istsos/lib/pytz/zoneinfo/Asia/Vladivostok
+istsos/lib/pytz/zoneinfo/Asia/Anadyr
+istsos/lib/pytz/zoneinfo/Asia/Kathmandu
+istsos/lib/pytz/zoneinfo/Asia/Bishkek
+istsos/lib/pytz/zoneinfo/Asia/Samarkand
+istsos/lib/pytz/zoneinfo/Asia/Rangoon
+istsos/lib/pytz/zoneinfo/Asia/Kashgar
+istsos/lib/pytz/zoneinfo/Asia/Kamchatka
+istsos/lib/pytz/zoneinfo/Asia/Chungking
+istsos/lib/pytz/zoneinfo/Asia/Baku
+istsos/lib/pytz/zoneinfo/Asia/Calcutta
+istsos/lib/pytz/zoneinfo/Asia/Damascus
+istsos/lib/pytz/zoneinfo/Asia/Qatar
+istsos/lib/pytz/zoneinfo/Asia/Yekaterinburg
+istsos/lib/pytz/zoneinfo/iso3166.tab
+istsos/lib/pytz/zoneinfo/W-SU
+istsos/lib/pytz/zoneinfo/Israel
+istsos/lib/pytz/zoneinfo/CET
+istsos/lib/pytz/zoneinfo/Egypt
+istsos/lib/pytz/zoneinfo/US/
+istsos/lib/pytz/zoneinfo/US/Samoa
+istsos/lib/pytz/zoneinfo/US/Arizona
+istsos/lib/pytz/zoneinfo/US/Pacific
+istsos/lib/pytz/zoneinfo/US/Pacific-New
+istsos/lib/pytz/zoneinfo/US/East-Indiana
+istsos/lib/pytz/zoneinfo/US/Michigan
+istsos/lib/pytz/zoneinfo/US/Alaska
+istsos/lib/pytz/zoneinfo/US/Eastern
+istsos/lib/pytz/zoneinfo/US/Indiana-Starke
+istsos/lib/pytz/zoneinfo/US/Central
+istsos/lib/pytz/zoneinfo/US/Mountain
+istsos/lib/pytz/zoneinfo/US/Aleutian
+istsos/lib/pytz/zoneinfo/US/Hawaii
+istsos/lib/pytz/zoneinfo/Poland
+istsos/lib/pytz/zoneinfo/Japan
+istsos/lib/pytz/zoneinfo/Greenwich
+istsos/lib/pytz/zoneinfo/Cuba
+istsos/lib/pytz/zoneinfo/Iran
+istsos/lib/pytz/zoneinfo/Mexico/
+istsos/lib/pytz/zoneinfo/Mexico/General
+istsos/lib/pytz/zoneinfo/Mexico/BajaSur
+istsos/lib/pytz/zoneinfo/Mexico/BajaNorte
+istsos/lib/pytz/zoneinfo/NZ-CHAT
+istsos/lib/pytz/zoneinfo/Kwajalein
+istsos/lib/pytz/zoneinfo/MST7MDT
+istsos/lib/pytz/zoneinfo/Europe/
+istsos/lib/pytz/zoneinfo/Europe/Bratislava
+istsos/lib/pytz/zoneinfo/Europe/Luxembourg
+istsos/lib/pytz/zoneinfo/Europe/Riga
+istsos/lib/pytz/zoneinfo/Europe/Gibraltar
+istsos/lib/pytz/zoneinfo/Europe/Budapest
+istsos/lib/pytz/zoneinfo/Europe/Uzhgorod
+istsos/lib/pytz/zoneinfo/Europe/Nicosia
+istsos/lib/pytz/zoneinfo/Europe/Berlin
+istsos/lib/pytz/zoneinfo/Europe/Zagreb
+istsos/lib/pytz/zoneinfo/Europe/Zaporozhye
+istsos/lib/pytz/zoneinfo/Europe/Sofia
+istsos/lib/pytz/zoneinfo/Europe/Chisinau
+istsos/lib/pytz/zoneinfo/Europe/Jersey
+istsos/lib/pytz/zoneinfo/Europe/Vilnius
+istsos/lib/pytz/zoneinfo/Europe/Kaliningrad
+istsos/lib/pytz/zoneinfo/Europe/Istanbul
+istsos/lib/pytz/zoneinfo/Europe/Sarajevo
+istsos/lib/pytz/zoneinfo/Europe/Ljubljana
+istsos/lib/pytz/zoneinfo/Europe/Moscow
+istsos/lib/pytz/zoneinfo/Europe/Samara
+istsos/lib/pytz/zoneinfo/Europe/Guernsey
+istsos/lib/pytz/zoneinfo/Europe/Madrid
+istsos/lib/pytz/zoneinfo/Europe/Simferopol
+istsos/lib/pytz/zoneinfo/Europe/Tallinn
+istsos/lib/pytz/zoneinfo/Europe/Podgorica
+istsos/lib/pytz/zoneinfo/Europe/Rome
+istsos/lib/pytz/zoneinfo/Europe/Prague
+istsos/lib/pytz/zoneinfo/Europe/Tiraspol
+istsos/lib/pytz/zoneinfo/Europe/Warsaw
+istsos/lib/pytz/zoneinfo/Europe/Vaduz
+istsos/lib/pytz/zoneinfo/Europe/Skopje
+istsos/lib/pytz/zoneinfo/Europe/Athens
+istsos/lib/pytz/zoneinfo/Europe/Volgograd
+istsos/lib/pytz/zoneinfo/Europe/Tirane
+istsos/lib/pytz/zoneinfo/Europe/Busingen
+istsos/lib/pytz/zoneinfo/Europe/Belgrade
+istsos/lib/pytz/zoneinfo/Europe/Helsinki
+istsos/lib/pytz/zoneinfo/Europe/Malta
+istsos/lib/pytz/zoneinfo/Europe/Oslo
+istsos/lib/pytz/zoneinfo/Europe/Zurich
+istsos/lib/pytz/zoneinfo/Europe/Minsk
+istsos/lib/pytz/zoneinfo/Europe/Andorra
+istsos/lib/pytz/zoneinfo/Europe/Kiev
+istsos/lib/pytz/zoneinfo/Europe/Stockholm
+istsos/lib/pytz/zoneinfo/Europe/Belfast
+istsos/lib/pytz/zoneinfo/Europe/Paris
+istsos/lib/pytz/zoneinfo/Europe/Copenhagen
+istsos/lib/pytz/zoneinfo/Europe/Lisbon
+istsos/lib/pytz/zoneinfo/Europe/Mariehamn
+istsos/lib/pytz/zoneinfo/Europe/Amsterdam
+istsos/lib/pytz/zoneinfo/Europe/Dublin
+istsos/lib/pytz/zoneinfo/Europe/San_Marino
+istsos/lib/pytz/zoneinfo/Europe/Monaco
+istsos/lib/pytz/zoneinfo/Europe/Isle_of_Man
+istsos/lib/pytz/zoneinfo/Europe/London
+istsos/lib/pytz/zoneinfo/Europe/Vatican
+istsos/lib/pytz/zoneinfo/Europe/Brussels
+istsos/lib/pytz/zoneinfo/Europe/Bucharest
+istsos/lib/pytz/zoneinfo/Europe/Vienna
+istsos/lib/pytz/zoneinfo/NZ
+istsos/lib/pytz/zoneinfo/zone1970.tab
+istsos/lib/pytz/zoneinfo/EST5EDT
+istsos/lib/pytz/zoneinfo/GMT-0
+istsos/lib/pytz/zoneinfo/Universal
+istsos/lib/pytz/zoneinfo/localtime
+istsos/lib/pytz/zoneinfo/UTC
+istsos/lib/pytz/zoneinfo/GB-Eire
+istsos/lib/pytz/zoneinfo/Jamaica
+istsos/lib/pytz/zoneinfo/Indian/
+istsos/lib/pytz/zoneinfo/Indian/Antananarivo
+istsos/lib/pytz/zoneinfo/Indian/Mayotte
+istsos/lib/pytz/zoneinfo/Indian/Mauritius
+istsos/lib/pytz/zoneinfo/Indian/Christmas
+istsos/lib/pytz/zoneinfo/Indian/Kerguelen
+istsos/lib/pytz/zoneinfo/Indian/Maldives
+istsos/lib/pytz/zoneinfo/Indian/Comoro
+istsos/lib/pytz/zoneinfo/Indian/Cocos
+istsos/lib/pytz/zoneinfo/Indian/Reunion
+istsos/lib/pytz/zoneinfo/Indian/Chagos
+istsos/lib/pytz/zoneinfo/Indian/Mahe
+istsos/lib/pytz/zoneinfo/GMT+0
+istsos/lib/pytz/zoneinfo/GMT0
+istsos/lib/pytz/zoneinfo/Chile/
+istsos/lib/pytz/zoneinfo/Chile/EasterIsland
+istsos/lib/pytz/zoneinfo/Chile/Continental
+istsos/lib/pytz/zoneinfo/Factory
+istsos/lib/pytz/zoneinfo/Australia/
+istsos/lib/pytz/zoneinfo/Australia/Lindeman
+istsos/lib/pytz/zoneinfo/Australia/South
+istsos/lib/pytz/zoneinfo/Australia/NSW
+istsos/lib/pytz/zoneinfo/Australia/LHI
+istsos/lib/pytz/zoneinfo/Australia/Yancowinna
+istsos/lib/pytz/zoneinfo/Australia/North
+istsos/lib/pytz/zoneinfo/Australia/Queensland
+istsos/lib/pytz/zoneinfo/Australia/Lord_Howe
+istsos/lib/pytz/zoneinfo/Australia/Sydney
+istsos/lib/pytz/zoneinfo/Australia/Currie
+istsos/lib/pytz/zoneinfo/Australia/Broken_Hill
+istsos/lib/pytz/zoneinfo/Australia/Eucla
+istsos/lib/pytz/zoneinfo/Australia/Melbourne
+istsos/lib/pytz/zoneinfo/Australia/West
+istsos/lib/pytz/zoneinfo/Australia/Victoria
+istsos/lib/pytz/zoneinfo/Australia/Tasmania
+istsos/lib/pytz/zoneinfo/Australia/Perth
+istsos/lib/pytz/zoneinfo/Australia/ACT
+istsos/lib/pytz/zoneinfo/Australia/Canberra
+istsos/lib/pytz/zoneinfo/Australia/Brisbane
+istsos/lib/pytz/zoneinfo/Australia/Hobart
+istsos/lib/pytz/zoneinfo/Australia/Darwin
+istsos/lib/pytz/zoneinfo/Australia/Adelaide
+istsos/lib/pytz/zoneinfo/GB
+istsos/lib/pytz/exceptions.py
+istsos/lib/pytz/tzfile.py
+istsos/lib/pytz/tests/
+istsos/lib/pytz/tests/test_lazy.py
+istsos/lib/pytz/tests/test_tzinfo.py
+istsos/lib/pytz/tests/test_docs.py
+istsos/lib/pytz/lazy.py
+istsos/lib/pytz/reference.py
+istsos/lib/isodate/
+istsos/lib/isodate/isotzinfo.py
+istsos/lib/isodate/__init__.py
+istsos/lib/isodate/isodates.py
+istsos/lib/isodate/isoerror.py
+istsos/lib/isodate/isostrf.py
+istsos/lib/isodate/tzinfo.py
+istsos/lib/isodate/duration.py
+istsos/lib/isodate/isodatetime.py
+istsos/lib/isodate/isoduration.py
+istsos/lib/isodate/isotime.py
+istsos/lib/etree.py
+istsos/lib/requests_oauthlib/
+istsos/lib/requests_oauthlib/compliance_fixes/
+istsos/lib/requests_oauthlib/compliance_fixes/weibo.py
+istsos/lib/requests_oauthlib/compliance_fixes/linkedin.py
+istsos/lib/requests_oauthlib/compliance_fixes/__init__.py
+istsos/lib/requests_oauthlib/compliance_fixes/facebook.py
+istsos/lib/requests_oauthlib/compliance_fixes/douban.py
+istsos/lib/requests_oauthlib/oauth2_auth.py
+istsos/lib/requests_oauthlib/__init__.py
+istsos/lib/requests_oauthlib/oauth2_session.py
+istsos/lib/requests_oauthlib/oauth1_auth.py
+istsos/lib/requests_oauthlib/oauth1_session.py
+istsos/lib/preparelibs.sh
+istsos/COMMITTERS.txt
+istsos/application.py
+istsos/auth.py
+istsos/application_istsoslib.py
+istsos/GPL.txt
+istsos/scheduler_notification.py
+istsos/interface/
+istsos/interface/modules/
+istsos/interface/modules/requests/
+istsos/interface/modules/requests/js/
+istsos/interface/modules/requests/js/google-code-prettify/
+istsos/interface/modules/requests/js/google-code-prettify/prettify.css
+istsos/interface/modules/requests/app.js
+istsos/interface/modules/requests/css/
+istsos/interface/modules/requests/css/main.css
+istsos/interface/modules/requests/xml/
+istsos/interface/modules/requests/xml/locarnoinsertobservation.xml
+istsos/interface/modules/requests/xml/getObservation.xml
+istsos/interface/modules/requests/xml/getFeatureOfInterest.xml
+istsos/interface/modules/requests/xml/getCapabilities.xml
+istsos/interface/modules/requests/xml/describeSensor.xml
+istsos/interface/modules/requests/resources/
+istsos/interface/modules/requests/resources/images/
+istsos/interface/modules/requests/resources/images/form/
+istsos/interface/modules/requests/resources/images/form/trigger.png
+istsos/interface/modules/requests/resources/images/form/exclamation.png
+istsos/interface/modules/requests/resources/images/loadmask/
+istsos/interface/modules/requests/resources/images/loadmask/loading.gif
+istsos/interface/modules/requests/resources/requests-all.css
+istsos/interface/modules/requests/index.html
+istsos/interface/modules/requests/images/
+istsos/interface/modules/requests/images/download.png
+istsos/interface/modules/requests/images/istsos-logo.png
+istsos/interface/admin/
+istsos/interface/admin/favicon.ico
+istsos/interface/admin/_test_virtualprocedureeditor.html
+istsos/interface/admin/codemirror/
+istsos/interface/admin/codemirror/README.md
+istsos/interface/admin/codemirror/doc/
+istsos/interface/admin/codemirror/doc/upgrade_v2.2.html
+istsos/interface/admin/codemirror/doc/baboon.png
+istsos/interface/admin/codemirror/doc/internals.html
+istsos/interface/admin/codemirror/doc/docs.css
+istsos/interface/admin/codemirror/doc/reporting.html
+istsos/interface/admin/codemirror/doc/compress.html
+istsos/interface/admin/codemirror/doc/baboon_vector.svg
+istsos/interface/admin/codemirror/doc/manual.html
+istsos/interface/admin/codemirror/doc/oldrelease.html
+istsos/interface/admin/codemirror/LICENSE
+istsos/interface/admin/codemirror/lib/
+istsos/interface/admin/codemirror/lib/util/
+istsos/interface/admin/codemirror/lib/util/foldcode.js
+istsos/interface/admin/codemirror/lib/util/runmode.js
+istsos/interface/admin/codemirror/lib/util/simple-hint.js
+istsos/interface/admin/codemirror/lib/util/simple-hint.css
+istsos/interface/admin/codemirror/lib/util/dialog.js
+istsos/interface/admin/codemirror/lib/util/closetag.js
+istsos/interface/admin/codemirror/lib/util/match-highlighter.js
+istsos/interface/admin/codemirror/lib/util/search.js
+istsos/interface/admin/codemirror/lib/util/formatting.js
+istsos/interface/admin/codemirror/lib/util/searchcursor.js
+istsos/interface/admin/codemirror/lib/util/javascript-hint.js
+istsos/interface/admin/codemirror/lib/util/dialog.css
+istsos/interface/admin/codemirror/lib/util/loadmode.js
+istsos/interface/admin/codemirror/lib/util/overlay.js
+istsos/interface/admin/codemirror/lib/codemirror.js
+istsos/interface/admin/codemirror/lib/codemirror.css
+istsos/interface/admin/codemirror/theme/
+istsos/interface/admin/codemirror/theme/lesser-dark.css
+istsos/interface/admin/codemirror/theme/monokai.css
+istsos/interface/admin/codemirror/theme/elegant.css
+istsos/interface/admin/codemirror/theme/erlang-dark.css
+istsos/interface/admin/codemirror/theme/blackboard.css
+istsos/interface/admin/codemirror/theme/night.css
+istsos/interface/admin/codemirror/theme/xq-dark.css
+istsos/interface/admin/codemirror/theme/rubyblue.css
+istsos/interface/admin/codemirror/theme/eclipse.css
+istsos/interface/admin/codemirror/theme/ambiance.css
+istsos/interface/admin/codemirror/theme/neat.css
+istsos/interface/admin/codemirror/theme/cobalt.css
+istsos/interface/admin/codemirror/keymap/
+istsos/interface/admin/codemirror/keymap/vim.js
+istsos/interface/admin/codemirror/keymap/emacs.js
+istsos/interface/admin/codemirror/demo/
+istsos/interface/admin/codemirror/demo/fullscreen.html
+istsos/interface/admin/codemirror/demo/formatting.html
+istsos/interface/admin/codemirror/demo/visibletabs.html
+istsos/interface/admin/codemirror/demo/loadmode.html
+istsos/interface/admin/codemirror/demo/activeline.html
+istsos/interface/admin/codemirror/demo/matchhighlighter.html
+istsos/interface/admin/codemirror/demo/emacs.html
+istsos/interface/admin/codemirror/demo/search.html
+istsos/interface/admin/codemirror/demo/closetag.html
+istsos/interface/admin/codemirror/demo/vim.html
+istsos/interface/admin/codemirror/demo/complete.html
+istsos/interface/admin/codemirror/demo/marker.html
+istsos/interface/admin/codemirror/demo/resize.html
+istsos/interface/admin/codemirror/demo/changemode.html
+istsos/interface/admin/codemirror/demo/preview.html
+istsos/interface/admin/codemirror/demo/runmode.html
+istsos/interface/admin/codemirror/demo/theme.html
+istsos/interface/admin/codemirror/demo/folding.html
+istsos/interface/admin/codemirror/demo/mustache.html
+istsos/interface/admin/codemirror/mode/
+istsos/interface/admin/codemirror/mode/python/
+istsos/interface/admin/codemirror/mode/python/LICENSE.txt
+istsos/interface/admin/codemirror/mode/python/python.js
+istsos/interface/admin/codemirror/mode/python/index.html
+istsos/interface/admin/codemirror/mode/javascript/
+istsos/interface/admin/codemirror/mode/javascript/javascript.js
+istsos/interface/admin/codemirror/mode/javascript/index.html
+istsos/interface/admin/codemirror/test/
+istsos/interface/admin/codemirror/test/mode_test.js
+istsos/interface/admin/codemirror/test/mode_test.css
+istsos/interface/admin/codemirror/test/test.js
+istsos/interface/admin/codemirror/test/index.html
+istsos/interface/admin/codemirror/index.html
+istsos/interface/admin/ol/
+istsos/interface/admin/ol/ol.css
+istsos/interface/admin/ol/ol.js
+istsos/interface/admin/ol/ol-debug.js
+istsos/interface/admin/css/
+istsos/interface/admin/css/main.css
+istsos/interface/admin/css/images/
+istsos/interface/admin/css/images/unchecked.gif
+istsos/interface/admin/css/images/grid3-hd-btn.gif
+istsos/interface/admin/css/images/checked.gif
+istsos/interface/admin/dygraphs/
+istsos/interface/admin/dygraphs/dygraph-combined.js
+istsos/interface/admin/dygraphs/dygraph.min.js
+istsos/interface/admin/app/
+istsos/interface/admin/app/engine/
+istsos/interface/admin/app/engine/wa.js
+istsos/interface/admin/app/engine/pageConfig.js
+istsos/interface/admin/app/engine/pageManager.js
+istsos/interface/admin/app/store/
+istsos/interface/admin/app/store/cmbDocumentFormat.js
+istsos/interface/admin/app/store/Services.js
+istsos/interface/admin/app/store/gridOfferings.js
+istsos/interface/admin/app/store/gridDocumentation.js
+istsos/interface/admin/app/store/gridProceduresList.js
+istsos/interface/admin/app/store/AggregateFunctionStore.js
+istsos/interface/admin/app/store/Offerings.js
+istsos/interface/admin/app/store/ChartStyles.js
+istsos/interface/admin/app/store/cmbIdentification.js
+istsos/interface/admin/app/store/MyArrayStore.js
+istsos/interface/admin/app/store/DataQualityStore.js
+istsos/interface/admin/app/store/Fake.js
+istsos/interface/admin/app/store/cmbName.js
+istsos/interface/admin/app/store/cmbSml.js
+istsos/interface/admin/app/store/vplist.js
+istsos/interface/admin/app/store/Observations.js
+istsos/interface/admin/app/store/cmbNameDescription.js
+istsos/interface/admin/app/store/Procedures.js
+istsos/interface/admin/app/store/gridObservedProperties.js
+istsos/interface/admin/app/store/RatingCurve.js
+istsos/interface/admin/app/store/gridUoms.js
+istsos/interface/admin/app/store/cmbSystemType.js
+istsos/interface/admin/app/store/Constraint.js
+istsos/interface/admin/app/store/gridOutputs.js
+istsos/interface/admin/app/store/ObservedProperties.js
+istsos/interface/admin/app/store/serverstatus.js
+istsos/interface/admin/app/view/
+istsos/interface/admin/app/view/newservice.js
+istsos/interface/admin/app/view/Editor1.js
+istsos/interface/admin/app/view/paths.js
+istsos/interface/admin/app/view/ObservationEditor.js
+istsos/interface/admin/app/view/uomsEditor.js
+istsos/interface/admin/app/view/Welcome.js
+istsos/interface/admin/app/view/serviceconfig.js
+istsos/interface/admin/app/view/offeringsEditor.js
+istsos/interface/admin/app/view/geo.js
+istsos/interface/admin/app/view/getobservation.js
+istsos/interface/admin/app/view/serviceEditor.js
+istsos/interface/admin/app/view/FormPaths.js
+istsos/interface/admin/app/view/obsPropEditor.js
+istsos/interface/admin/app/view/database.js
+istsos/interface/admin/app/view/ProcedureGrid.js
+istsos/interface/admin/app/view/qualityindexEditor.js
+istsos/interface/admin/app/view/Calc.js
+istsos/interface/admin/app/view/ProcedureChart.js
+istsos/interface/admin/app/view/ui/
+istsos/interface/admin/app/view/ui/newservice.js
+istsos/interface/admin/app/view/ui/Editor1.js
+istsos/interface/admin/app/view/ui/paths.js
+istsos/interface/admin/app/view/ui/ObservationEditor.js
+istsos/interface/admin/app/view/ui/uomsEditor.js
+istsos/interface/admin/app/view/ui/Welcome.js
+istsos/interface/admin/app/view/ui/serviceconfig.js
+istsos/interface/admin/app/view/ui/offeringsEditor.js
+istsos/interface/admin/app/view/ui/geo.js
+istsos/interface/admin/app/view/ui/getobservation.js
+istsos/interface/admin/app/view/ui/serviceEditor.js
+istsos/interface/admin/app/view/ui/FormPaths.js
+istsos/interface/admin/app/view/ui/obsPropEditor.js
+istsos/interface/admin/app/view/ui/database.js
+istsos/interface/admin/app/view/ui/ProcedureGrid.js
+istsos/interface/admin/app/view/ui/qualityindexEditor.js
+istsos/interface/admin/app/view/ui/Calc.js
+istsos/interface/admin/app/view/ui/ProcedureChart.js
+istsos/interface/admin/app/view/ui/Wizard.js
+istsos/interface/admin/app/view/ui/ProcedureMap.js
+istsos/interface/admin/app/view/ui/ProcedurePlotter.js
+istsos/interface/admin/app/view/ui/ObservationEditorColumn.js
+istsos/interface/admin/app/view/ui/config.js
+istsos/interface/admin/app/view/ui/provider.js
+istsos/interface/admin/app/view/ui/WizardPage.js
+istsos/interface/admin/app/view/ui/ChartContainer.js
+istsos/interface/admin/app/view/ui/contactinfo.js
+istsos/interface/admin/app/view/ui/MainMenu2.js
+istsos/interface/admin/app/view/ui/Chart.js
+istsos/interface/admin/app/view/ui/VirtualDischargeEditor.js
+istsos/interface/admin/app/view/ui/proceduresList.js
+istsos/interface/admin/app/view/ui/Viewer.js
+istsos/interface/admin/app/view/ui/ObservationEditorAdvancedOperations.js
+istsos/interface/admin/app/view/ui/ProcedureChooser.js
+istsos/interface/admin/app/view/ui/VirtualProcedureEditor.js
+istsos/interface/admin/app/view/ui/procedure.js
+istsos/interface/admin/app/view/ui/about.js
+istsos/interface/admin/app/view/ui/identification.js
+istsos/interface/admin/app/view/ui/MyGridPanel15.js
+istsos/interface/admin/app/view/ui/ViewerPanel.js
+istsos/interface/admin/app/view/ui/serviceurl.js
+istsos/interface/admin/app/view/ui/ProcedureGridEditor.js
+istsos/interface/admin/app/view/ui/FormDataQuality.js
+istsos/interface/admin/app/view/ui/BasePage.js
+istsos/interface/admin/app/view/ui/mqtt.js
+istsos/interface/admin/app/view/ui/TestCsv.js
+istsos/interface/admin/app/view/ui/status.js
+istsos/interface/admin/app/view/ui/MainPanel.js
+istsos/interface/admin/app/view/ui/MapViewer.js
+istsos/interface/admin/app/view/ui/MainMenu.js
+istsos/interface/admin/app/view/ui/CenterPage.js
+istsos/interface/admin/app/view/ui/CheckColumn.js
+istsos/interface/admin/app/view/ui/contacts.js
+istsos/interface/admin/app/view/Wizard.js
+istsos/interface/admin/app/view/ProcedureMap.js
+istsos/interface/admin/app/view/ProcedurePlotter.js
+istsos/interface/admin/app/view/ObservationEditorColumn.js
+istsos/interface/admin/app/view/config.js
+istsos/interface/admin/app/view/provider.js
+istsos/interface/admin/app/view/ChartContainer.js
+istsos/interface/admin/app/view/contactinfo.js
+istsos/interface/admin/app/view/MainMenu2.js
+istsos/interface/admin/app/view/Chart.js
+istsos/interface/admin/app/view/VirtualDischargeEditor.js
+istsos/interface/admin/app/view/proceduresList.js
+istsos/interface/admin/app/view/Viewer.js
+istsos/interface/admin/app/view/ObservationEditorAdvancedOperations.js
+istsos/interface/admin/app/view/ProcedureChooser.js
+istsos/interface/admin/app/view/VirtualProcedureEditor.js
+istsos/interface/admin/app/view/procedure.js
+istsos/interface/admin/app/view/about.js
+istsos/interface/admin/app/view/identification.js
+istsos/interface/admin/app/view/MyGridPanel15.js
+istsos/interface/admin/app/view/ViewerPanel.js
+istsos/interface/admin/app/view/serviceurl.js
+istsos/interface/admin/app/view/ProcedureGridEditor.js
+istsos/interface/admin/app/view/WaterDischargeEditor.js
+istsos/interface/admin/app/view/FormDataQuality.js
+istsos/interface/admin/app/view/BasePage.js
+istsos/interface/admin/app/view/mqtt.js
+istsos/interface/admin/app/view/TestCsv.js
+istsos/interface/admin/app/view/status.js
+istsos/interface/admin/app/view/MainPanel.js
+istsos/interface/admin/app/view/MapViewer.js
+istsos/interface/admin/app/view/MainMenu.js
+istsos/interface/admin/app/view/CheckColumn.js
+istsos/interface/admin/app/view/contacts.js
+istsos/interface/admin/app/Procedure.js
+istsos/interface/admin/app/data/
+istsos/interface/admin/app/data/fakeOfferings.json
+istsos/interface/admin/app/data/procedure.json
+istsos/interface/admin/app/data/cmbepsg.json
+istsos/interface/admin/app/data/cmbidentification.json
+istsos/interface/admin/app/data/cmbphenomenon.json
+istsos/interface/admin/app/data/cmbcapabilities.json
+istsos/interface/admin/app/data/cmbobservedproperties.json
+istsos/interface/admin/app/data/cmbuom.json
+istsos/interface/admin/app/data/cmbdocumentformat.json
+istsos/interface/admin/app/data/cmbcapabilitiesuom.json
+istsos/interface/admin/app/data/cmbsystemtype.json
+istsos/interface/admin/viewer.html
+istsos/interface/admin/ext/
+istsos/interface/admin/ext/codemirror.js
+istsos/interface/admin/ext/ext-all-debug.js
+istsos/interface/admin/ext/resources/
+istsos/interface/admin/ext/resources/css/
+istsos/interface/admin/ext/resources/css/ext-standard.css
+istsos/interface/admin/ext/resources/css/ext-all-access.css
+istsos/interface/admin/ext/resources/css/ext-ie-scoped.css
+istsos/interface/admin/ext/resources/css/ext-all.css
+istsos/interface/admin/ext/resources/css/ext-all-scoped.css
+istsos/interface/admin/ext/resources/css/ext-all-gray.css
+istsos/interface/admin/ext/resources/css/ext-sandbox.css
+istsos/interface/admin/ext/resources/css/ext-standard-scoped.css
+istsos/interface/admin/ext/resources/css/ext-ie.css
+istsos/interface/admin/ext/resources/sass/
+istsos/interface/admin/ext/resources/sass/ext-all-scoped.scss
+istsos/interface/admin/ext/resources/sass/ext-all-gray.scss
+istsos/interface/admin/ext/resources/sass/ext-standard-scoped.scss
+istsos/interface/admin/ext/resources/sass/ext-all.scss
+istsos/interface/admin/ext/resources/sass/ext-ie.scss
+istsos/interface/admin/ext/resources/sass/ext-sandbox.scss
+istsos/interface/admin/ext/resources/sass/ext-ie-scoped.scss
+istsos/interface/admin/ext/resources/sass/config.rb
+istsos/interface/admin/ext/resources/sass/ext-standard.scss
+istsos/interface/admin/ext/resources/sass/ext-all-access.scss
+istsos/interface/admin/ext/resources/themes/
+istsos/interface/admin/ext/resources/themes/stylesheets/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/_mixins.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/_functions.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/_core.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_focus.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_core.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_htmleditor.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_toolbar.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_btn-group.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_loadmask.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_form.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_progress-bar.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_grid.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_qtip.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_panel.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_menu.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_layout.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_pickers.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_boundlist.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_tabs.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_tree.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_button.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/variables/_window.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/_focus.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/_splitter.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/_dragdrop.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/_messagebox.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/_scroller.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/_resizable.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/util/_tool.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/_variables.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/core/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/core/_core.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/core/_reset.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/mixins/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/mixins/_reset-extras.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/mixins/_color-by-background.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/mixins/_background-gradient.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/mixins/_theme-background-image.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/mixins/_frame.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/mixins/_inner-border.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/_widgets.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/_all.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_slider.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_toolbar.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_btn-group.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_loadmask.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_form.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_progress-bar.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_tab.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_grid.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_file.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_checkbox.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_htmleditor.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_fieldset.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_checkboxgroup.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_field.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/form/_all.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_drawcomponent.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_qtip.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_panel.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_menu.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_tabbar.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_html.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_viewport.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_boundlist.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_tree.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_colorpicker.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_button.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_window.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/widgets/_datepicker.scss
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/layout/
+istsos/interface/admin/ext/resources/themes/stylesheets/ext4/default/layout/_layout.scss
+istsos/interface/admin/ext/resources/themes/templates/
+istsos/interface/admin/ext/resources/themes/templates/resources/
+istsos/interface/admin/ext/resources/themes/templates/resources/sass/
+istsos/interface/admin/ext/resources/themes/templates/resources/sass/my-ext-theme.scss
+istsos/interface/admin/ext/resources/themes/templates/resources/sass/config.rb
+istsos/interface/admin/ext/resources/themes/lib/
+istsos/interface/admin/ext/resources/themes/lib/utils.rb
+istsos/interface/admin/ext/resources/themes/compass_init.rb
+istsos/interface/admin/ext/resources/themes/images/
+istsos/interface/admin/ext/resources/themes/images/default/
+istsos/interface/admin/ext/resources/themes/images/default/sizer/
+istsos/interface/admin/ext/resources/themes/images/default/sizer/sw-handle.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/ne-handle-dark.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/nw-handle-dark.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/square.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/e-handle-dark.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/ne-handle.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/sw-handle-dark.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/s-handle-dark.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/e-handle.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/nw-handle.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/se-handle.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/s-handle.gif
+istsos/interface/admin/ext/resources/themes/images/default/sizer/se-handle-dark.gif
+istsos/interface/admin/ext/resources/themes/images/default/progress/
+istsos/interface/admin/ext/resources/themes/images/default/progress/progress-default-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/
+istsos/interface/admin/ext/resources/themes/images/default/menu/item-over.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/menu-item-active-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/menu-parent.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/unchecked.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/group-checked.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/menu.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/menu-item-active-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/checked.gif
+istsos/interface/admin/ext/resources/themes/images/default/menu/menu-item-active-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/datepicker/
+istsos/interface/admin/ext/resources/themes/images/default/datepicker/datepicker-footer-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/datepicker/datepicker-header-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/datepicker/datepicker-footer-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/datepicker/datepicker-header-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/toolbar/
+istsos/interface/admin/ext/resources/themes/images/default/toolbar/scroll-left.gif
+istsos/interface/admin/ext/resources/themes/images/default/toolbar/scroll-right.gif
+istsos/interface/admin/ext/resources/themes/images/default/toolbar/toolbar-default-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/toolbar/more.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-right-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-top-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-bottom-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-left-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-left-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-top-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-right-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/window-header/window-header-default-bottom-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tip/
+istsos/interface/admin/ext/resources/themes/images/default/tip/tip-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tip/tip-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/util/
+istsos/interface/admin/ext/resources/themes/images/default/util/splitter/
+istsos/interface/admin/ext/resources/themes/images/default/util/splitter/mini-top.gif
+istsos/interface/admin/ext/resources/themes/images/default/util/splitter/mini-right.gif
+istsos/interface/admin/ext/resources/themes/images/default/util/splitter/mini-bottom.gif
+istsos/interface/admin/ext/resources/themes/images/default/util/splitter/mini-left.gif
+istsos/interface/admin/ext/resources/themes/images/default/dd/
+istsos/interface/admin/ext/resources/themes/images/default/dd/drop-yes.gif
+istsos/interface/admin/ext/resources/themes/images/default/dd/drop-add.gif
+istsos/interface/admin/ext/resources/themes/images/default/dd/drop-no.gif
+istsos/interface/admin/ext/resources/themes/images/default/form-invalid-tip/
+istsos/interface/admin/ext/resources/themes/images/default/form-invalid-tip/form-invalid-tip-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/form-invalid-tip/form-invalid-tip-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/form-invalid-tip/form-invalid-tip-default-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/form-invalid-tip/form-invalid-tip-default-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/slider/
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-v-thumb.gif
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-thumb.gif
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-v-thumb.png
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-thumb.png
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-v-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/slider/slider-v-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid3-rowheader.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/cell-special-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/drop-yes.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/sort_desc.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/loading.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/row-over.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/cell-special-selected-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-first-disabled.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-next-disabled.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/cell-special-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/hmenu-lock.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/row-sel.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/unchecked.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/hmenu-unlock.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/dd-insert-arrow-left.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/column-header-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/hmenu-lock.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/hmenu-asc.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/property-cell-selected-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/group-expand-sprite.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/property-cell-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/nowait.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/pick-button.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/arrow-right-white.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid3-hrow.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/sort-hd.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid3-hd-btn.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-first.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-prev.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/sort_asc.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/column-header-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid-loading.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/row-check-sprite.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/col-move-top.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/done.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid-split.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/mso-hd.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid-blue-hd.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/hd-pop.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/dd-insert-arrow-right.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/cell-special-selected-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/dd-insert-arrow-left.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/dirty.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/row-expand-sprite.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid-vista-hd.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-prev-disabled.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/footer-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/column-header-over-bg.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/hmenu-desc.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/invalid_line.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-last.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/hmenu-unlock.png
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid-hrow.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/column-header-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/drop-no.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/wait.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/col-move-bottom.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/group-collapse.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/checked.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid-blue-split.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/group-by.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/columns.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/refresh-disabled.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/dd-insert-arrow-right.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/grid3-hrow-over.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-last-disabled.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/refresh.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/group-expand.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/page-next.gif
+istsos/interface/admin/ext/resources/themes/images/default/grid/arrow-left-white.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-pressed-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-focus-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-focus-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-pressed-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-pressed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-pressed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-focus-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-pressed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-pressed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-pressed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-focus-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-disabled-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-pressed-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-disabled-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-pressed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-focus-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-focus-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-pressed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-focus-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-focus-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-focus-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-pressed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-focus-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-focus-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-focus-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-focus-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-focus-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-disabled-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-pressed-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-focus-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-pressed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-focus-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-medium-focus-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-pressed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-pressed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-large-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-pressed-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-focus-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-pressed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-medium-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-toolbar-small-pressed-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-small-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn/btn-default-large-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tools/
+istsos/interface/admin/ext/resources/themes/images/default/tools/tool-sprite-tpl.gif
+istsos/interface/admin/ext/resources/themes/images/default/tools/tool-sprites.gif
+istsos/interface/admin/ext/resources/themes/images/default/tools/tools-sprites-trans.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel/
+istsos/interface/admin/ext/resources/themes/images/default/panel/panel-default-framed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel/panel-default-framed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/
+istsos/interface/admin/ext/resources/themes/images/default/form/error-tip-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/trigger-tpl.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/spinner.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/exclamation.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/text-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/spinner-small.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/trigger-square.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/radio.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/checkbox.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/clear-trigger.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/search-trigger.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/trigger.gif
+istsos/interface/admin/ext/resources/themes/images/default/form/date-trigger.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-end-plus.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-between.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-plus.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-yes.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-append.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/loading.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-plus-nl.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-line.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-end-minus.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-end-minus-nl.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/folder.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/folder-open.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/leaf.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-end.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-add.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-above.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-minus-nl.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/s.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-end-plus-nl.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-below.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/arrows.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-no.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/elbow-minus.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-under.gif
+istsos/interface/admin/ext/resources/themes/images/default/tree/drop-over.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab-bar/
+istsos/interface/admin/ext/resources/themes/images/default/tab-bar/scroll-left.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab-bar/tab-bar-default-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab-bar/scroll-right.gif
+istsos/interface/admin/ext/resources/themes/images/default/editor/
+istsos/interface/admin/ext/resources/themes/images/default/editor/tb-sprite.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/
+istsos/interface/admin/ext/resources/themes/images/default/button/s-arrow-b.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/group-lr.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/s-arrow-o.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/arrow.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/group-cs.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/group-tb.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/s-arrow.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/s-arrow-noline.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/btn.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/s-arrow-b-noline.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/s-arrow-bo.gif
+istsos/interface/admin/ext/resources/themes/images/default/button/s-arrow-light.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/
+istsos/interface/admin/ext/resources/themes/images/default/box/tb.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/tb-blue.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/r-blue.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/r.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/l-blue.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/l.gif
+istsos/interface/admin/ext/resources/themes/images/default/box/corners-blue.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/
+istsos/interface/admin/ext/resources/themes/images/default/shared/icon-error.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/right-btn.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/left-btn.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/glass-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/warning.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/calendar.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/blue-loading.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/icon-question.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/shadow.png
+istsos/interface/admin/ext/resources/themes/images/default/shared/icon-warning.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/large-loading.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/icon-info.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/loading-balls.gif
+istsos/interface/admin/ext/resources/themes/images/default/shared/shadow-c.png
+istsos/interface/admin/ext/resources/themes/images/default/shared/shadow-lr.png
+istsos/interface/admin/ext/resources/themes/images/default/shared/hd-sprite.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-active-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-close.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-disabled-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-active-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-active-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-disabled-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-disabled-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-over-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-active-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-disabled-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-over-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-over-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-active-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-top-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/tab/tab-default-bottom-active-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/window/
+istsos/interface/admin/ext/resources/themes/images/default/window/window-default-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/window/window-default-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/boundlist/
+istsos/interface/admin/ext/resources/themes/images/default/boundlist/trigger-arrow.png
+istsos/interface/admin/ext/resources/themes/images/default/btn-group/
+istsos/interface/admin/ext/resources/themes/images/default/btn-group/btn-group-default-framed-notitle-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn-group/btn-group-default-framed-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn-group/btn-group-default-framed-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/btn-group/btn-group-default-framed-notitle-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-left-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-top-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-left-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-right-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-bottom-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-top-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-top-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-bottom-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-right-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-left-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-left-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-left-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-left-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-left-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-top-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-bottom-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-top-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-right-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-right-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-collapsed-right-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-right-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-right-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-bottom-sides.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-bottom-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-framed-top-corners.gif
+istsos/interface/admin/ext/resources/themes/images/default/panel-header/panel-header-default-top-bg.gif
+istsos/interface/admin/ext/resources/themes/images/default/layout/
+istsos/interface/admin/ext/resources/themes/images/default/layout/mini-top.gif
+istsos/interface/admin/ext/resources/themes/images/default/layout/mini-right.gif
+istsos/interface/admin/ext/resources/themes/images/default/layout/mini-bottom.gif
+istsos/interface/admin/ext/resources/themes/images/default/layout/mini-left.gif
+istsos/interface/admin/viewer/
+istsos/interface/admin/viewer/getObservation3.xml
+istsos/interface/admin/viewer/insertObservation_stationary_insitu_simple.xml
+istsos/interface/admin/viewer/istSOS_post_xml_index.xml
+istsos/interface/admin/viewer/getObservation.xml
+istsos/interface/admin/viewer/getfeatureOfinterestId.xml
+istsos/interface/admin/viewer/insertObservation_dynamic_insitu_composite.xml
+istsos/interface/admin/viewer/getFeatureOfInterest.xml
+istsos/interface/admin/viewer/insertObservation_stationary_insitu_composite.xml
+istsos/interface/admin/viewer/registerSensor_stationary_insitu_composite.xml
+istsos/interface/admin/viewer/insertObservation_dynamic_insitu_simple.xml
+istsos/interface/admin/viewer/getfeatureOfinterestBBOX.xml
+istsos/interface/admin/viewer/getObservation2.xml
+istsos/interface/admin/viewer/getCapabilities.xml
+istsos/interface/admin/viewer/registerSensor_stationary_insitu_simple.xml
+istsos/interface/admin/viewer/describeSensor.xml
+istsos/interface/admin/index.html
+istsos/interface/admin/dev.html
+istsos/interface/admin/images/
+istsos/interface/admin/images/menu/
+istsos/interface/admin/images/menu/network-transmit-receive.svg
+istsos/interface/admin/images/menu/coordinate.svg
+istsos/interface/admin/images/menu/media-playback-start.svg
+istsos/interface/admin/images/menu/about_grey.svg-path3848-4294966697.png
+istsos/interface/admin/images/menu/service_provider_light2.svg
+istsos/interface/admin/images/menu/boh.svg
+istsos/interface/admin/images/menu/virtual.svg
+istsos/interface/admin/images/menu/srvc_id.svg
+istsos/interface/admin/images/menu/about_grey.svg
+istsos/interface/admin/images/menu/quality.svg
+istsos/interface/admin/images/menu/list-add.svg
+istsos/interface/admin/images/menu/applications-internet.svg
+istsos/interface/admin/images/menu/about2.svg
+istsos/interface/admin/images/menu/proxy.svg
+istsos/interface/admin/images/menu/document-save.svg
+istsos/interface/admin/images/menu/No_trash_icon.svg
+istsos/interface/admin/images/menu/internet-radio-new.svg
+istsos/interface/admin/images/menu/emblem-ubuntuone-unsynchronized.svg
+istsos/interface/admin/images/menu/status.svg
+istsos/interface/admin/images/menu/getobs.svg
+istsos/interface/admin/images/menu/system-run_old.svg
+istsos/interface/admin/images/menu/World.svg
+istsos/interface/admin/images/menu/mqtt.svg
+istsos/interface/admin/images/menu/Icon-add.svg
+istsos/interface/admin/images/menu/editor.svg
+istsos/interface/admin/images/menu/user-trash.svg
+istsos/interface/admin/images/menu/contacts.svg
+istsos/interface/admin/images/menu/service_provider_light.svg
+istsos/interface/admin/images/menu/observedProperties.svg
+istsos/interface/admin/images/menu/status_1.svg
+istsos/interface/admin/images/menu/database.svg
+istsos/interface/admin/images/menu/download.svg
+istsos/interface/admin/images/menu/11971055981382663610sagar_ns_database.svg
+istsos/interface/admin/images/menu/applications-system.svg
+istsos/interface/admin/images/menu/view-list-details-symbolic.svg
+istsos/interface/admin/images/menu/emblem-system.svg
+istsos/interface/admin/images/menu/call-start.svg
+istsos/interface/admin/images/menu/new_service.svg
+istsos/interface/admin/images/menu/emblem-shared.svg
+istsos/interface/admin/images/menu/desktop-effects.svg
+istsos/interface/admin/images/menu/service_provider.svg
+istsos/interface/admin/images/menu/view-list-icons-symbolic.svg
+istsos/interface/admin/images/menu/provider.svg
+istsos/interface/admin/images/menu/media-eject.svg
+istsos/interface/admin/images/menu/unit.svg
+istsos/interface/admin/images/menu/quality_index.svg
+istsos/interface/admin/images/menu/delete2.svg
+istsos/interface/admin/images/menu/delete.svg
+istsos/interface/admin/images/menu/close.svg
+istsos/interface/admin/images/menu/system-run.svg
+istsos/interface/admin/images/menu/about.svg
+istsos/interface/admin/images/menu/offerings.svg
+istsos/interface/admin/images/forbidden.png
+istsos/interface/admin/images/istsos-logo-clear.xcf
+istsos/interface/admin/images/istsos.png
+istsos/interface/admin/images/header.png
+istsos/interface/admin/images/istsos-logo-clear.png
+istsos/interface/admin/images/eye.png
+istsos/interface/admin/images/istsos-logo.xcf
+istsos/interface/admin/images/eye.xcf
+istsos/interface/admin/images/eye-grey.png
+istsos/interface/admin/images/istsos-logo.png
+istsos/interface/admin/images/istsos-logo.gif
+istsos/interface/admin/images/icon/
+istsos/interface/admin/images/icon/chart_bar.png
+istsos/interface/admin/images/icon/database.png
+istsos/interface/admin/images/icon/chart_curve.png
+istsos/interface/admin/images/icon/user.png
+istsos/interface/admin/images/icon/libreoffice-extension.png
+istsos/interface/admin/images/icon/btn_border_hover.png
+istsos/interface/admin/images/icon/loading_white.gif
+istsos/interface/admin/images/icon/ko.svg
+istsos/interface/admin/images/icon/status_online.png
+istsos/interface/admin/images/icon/server.png
+istsos/interface/admin/images/icon/btn_border.png
+istsos/interface/admin/images/icon/ok.svg
+istsos/interface/admin/images/icon/chart_pie.png
+istsos/interface/admin/images/icon/user_edit.png
+istsos/interface/admin/images/icon/clock.png
+istsos/interface/admin/images/icon/server_chart.png
+istsos/interface/admin/poster.html
+istsos/interface/admin/data/
+istsos/interface/admin/data/offerings.json
+istsos/interface/admin/data/observedproperties.json
+istsos/interface/admin/data/procedures.json
+istsos/interface/admin/data/observations.json
+istsos/logs/
+istsos/makecheck.py
+istsos/wnslib/
+istsos/wnslib/services/
+istsos/wnslib/services/registrations/
+istsos/wnslib/services/registrations/registrations.py
+istsos/wnslib/services/registrations/__init__.py
+istsos/wnslib/services/__init__.py
+istsos/wnslib/services/notifications/
+istsos/wnslib/services/notifications/__init__.py
+istsos/wnslib/services/notifications/notifications.py
+istsos/wnslib/services/responses/
+istsos/wnslib/services/responses/responses.py
+istsos/wnslib/services/responses/__init__.py
+istsos/wnslib/services/setup/
+istsos/wnslib/services/setup/__init__.py
+istsos/wnslib/services/setup/setup.py
+istsos/wnslib/services/users/
+istsos/wnslib/services/users/__init__.py
+istsos/wnslib/services/users/users.py
+istsos/wnslib/__init__.py
+istsos/wnslib/notificationManager.py
+istsos/wnslib/wnslogger.py
+istsos/wnslib/resourceFactory.py
+istsos/wnslib/notificationScheduler.py
+istsos/wnslib/response.py
+istsos/wnslib/sqlschema.py
+istsos/wnslib/operation.py
+istsos/wnslib/notify.py
+navya:Downloads$ sudo chmod 755 -R /usr/local/istsos
+navya:Downloads$ sudo chown -R www-data:www-data /usr/local/istsos/services
+navya:Downloads$ sudo chown -R www-data:www-data /usr/local/istsos/logs
+navya:Downloads$ sudo gedit /etc/apache2/sites-enabled/000-default.conf
+
+(gedit:31490): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (gedit:31490): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:31490): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:31490): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:31490): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+
+** (gedit:31490): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:31490): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:31490): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+navya:Downloads$ 
+navya:Downloads$ 
+navya:Downloads$ sudo service apache2 restart
+navya:Downloads$ sudo -u postgres createdb -E UTF8 istsos
+navya:Downloads$ sudo -u postgres psql -d istsos -c 'CREATE EXTENSION postgis'
+CREATE EXTENSION
+navya:Downloads$ 
+
+
