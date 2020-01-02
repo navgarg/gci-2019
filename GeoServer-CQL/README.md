@@ -86,35 +86,31 @@ In order to verify that the gis_osm_roads_free_1 layer is published correctly, w
 You can use this preview map to zoom and pan around the dataset, as well as display the attributes of features.
 
 
-Running the CQL Queries
+**Running the CQL Queries**
+
 Click on the three dots at the top left corner of the map preview to open the advanced options toolbar. The example filters can be entered in the Filter: CQL box.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-CQL/Images/007.png)
 
 Now Click on any of the roads on the map. This will open the structure of the table of the dataset roads.
 
-
-
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-CQL/Images/008.png)
 
 Now we can run our CQL quries on this dataset.
 
-
 For example, in case we are interested in displaying only those roads which are having code more than 5125. For this we enter the query as follows:
 
-
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-CQL/Images/009.png)
 
 This query will filter out all the roads which are not satisfying the criterion code > 5125 and will display only those road satisfying the above criteria.
 The output map would be as given below:
 
-
-
-
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-CQL/Images/010.png)
 
 Now, if suppose somebody is interested in displaying only those roads which are having code equal to 5115. For this the entered query would be code=5115 and the output map would be as follows:
 
-
-
-
-
-
-
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-CQL/Images/011.png)
 
 For displaying roads, which are residential, the submitted query would be fclass=’residential’ and the output would be as given below:
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-CQL/Images/012.png)
