@@ -112,13 +112,11 @@ Now that the store is loaded, we can publish the layer.
 Previewing the layer
 In order to verify that the gis_osm_roads_free_1 layer is published correctly, we can preview the layer.
 1. I navigated to the Layer Preview screen and found the navyagarg:gis_osm_roads_free_1 layer.
- 
-
 
 2. Then, I clicked on the OpenLayers link in the Common Formats column.
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/013.png)
+
 3. An OpenLayers map was loaded in a new tab and displayed the shapefile data with the default line style. 
 You can use this preview map to zoom and pan around the dataset, as well as display the attributes of features.
-
-![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/013.png)
  
