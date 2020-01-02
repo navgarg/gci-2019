@@ -114,3 +114,8 @@ Now, if suppose somebody is interested in displaying only those roads which are 
 For displaying roads, which are residential, the submitted query would be fclass=’residential’ and the output would be as given below:
 
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-CQL/Images/012.png)
+
+
+After this, I created an html document that used OpenLayers to display the added layer.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/Map.png)
