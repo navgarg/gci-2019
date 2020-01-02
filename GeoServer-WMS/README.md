@@ -106,7 +106,7 @@ Now that the store is loaded, we can publish the layer.
 4. I then clicked on the Publishing tab at the top of the page.
 5. We can set the layer’s style here. Under WMS Settings, ensure that the Default Style is set to line.
  
-
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/15.png)
  
 6. Then I finalized the layer configuration by scrolling to the bottom of the page and clicking Save.
 Previewing the layer
