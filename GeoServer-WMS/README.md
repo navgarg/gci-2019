@@ -103,9 +103,13 @@ New layer
 Basic Resource Information
 3. Then, I generated the layer’s bounding boxes by clicking the Compute from data and then Compute from native bounds links.
  
+ ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/14.png)
+ 
 Generating bounding boxes
 4. I then clicked on the Publishing tab at the top of the page.
 5. We can set the layer’s style here. Under WMS Settings, ensure that the Default Style is set to line.
+ 
+ ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/15.png)
  
 Select Default Style
 6. Then I finalized the layer configuration by scrolling to the bottom of the page and clicking Save.
@@ -113,7 +117,7 @@ Previewing the layer
 In order to verify that the gis_osm_roads_free_1 layer is published correctly, we can preview the layer.
 1. I navigated to the Layer Preview screen and found the navyagarg:gis_osm_roads_free_1 layer.
  
-Layer Preview
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/16.png)
 
 2. Then, I clicked on the OpenLayers link in the Common Formats column.
 
