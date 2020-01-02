@@ -119,4 +119,6 @@ In order to verify that the gis_osm_roads_free_1 layer is published correctly, w
 
 3. An OpenLayers map was loaded in a new tab and displayed the shapefile data with the default line style. 
 You can use this preview map to zoom and pan around the dataset, as well as display the attributes of features.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/013.png)
  
