@@ -1,8 +1,8 @@
-Tutorial for the Process Followed
-GCI 2019 Task Name: OpenLayers and GeoServer: Web map that displays a WMS layer
+**Tutorial for the Process Followed**
+**GCI 2019 Task Name: OpenLayers and GeoServer: Web map that displays a WMS layer**
 
 
-Disclaimer / Credit: This tutorial has been created using the steps suggested by Geoserver website at https://docs.geoserver.org/latest/en/user/gettingstarted/shapefile-quickstart/index.html. Accordingly, the steps given below are an adopted version of the steps available on that webpage.
+**Disclaimer / Credit:** This tutorial has been created using the steps suggested by Geoserver website at https://docs.geoserver.org/latest/en/user/gettingstarted/shapefile-quickstart/index.html. Accordingly, the steps given below are an adopted version of the steps available on that webpage.
 
 
 Installing Java 8 and GeoServer
