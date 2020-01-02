@@ -42,12 +42,14 @@ The above two window screeshots demonstrate that GeoServer was correctly started
 Username: admin
 Password: geoserver
  
-
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/geoserver2.png)
 
 Data preparation
 I have taken the Columbia State Road data from the URL given below:
 1. I went to the webpage https://download.geofabrik.de/north-america/us/district-of-columbia.html. This archive contains a shapefile of roads from Columbia State that will be used during in this tutorial.
 2. I clicked on the last URL given in the screenshot.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/0000.png)
 
 3. This will download the dataset, which contains several shapefiles, including the Columbia State Roads data.
 4. Then, I unziped the archive into a new directory.
@@ -59,6 +61,7 @@ The next step is to create a workspace for the shapefile.
 
 4. I clicked on the Add new workspace button.
 5. I was prompted to enter a workspace Name and Namespace URI.
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/geoserver4.png)
  
 6. I entered the Name as navyagarg and the Namespace URI as http://geoserver.org/navyagarg.
 
