@@ -95,23 +95,18 @@ Now that the store is loaded, we can publish the layer.
  
  ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/12.png)
  
-New layer
 2. The Edit Layer page defines the data and publishing parameters for a layer. Here, I entered a short Title and an Abstract for the gis_osm_roads_free_1 layer.
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/13.png)
 
- 
-Basic Resource Information
 3. Then, I generated the layer’s bounding boxes by clicking the Compute from data and then Compute from native bounds links.
  
  ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/14.png)
  
-Generating bounding boxes
 4. I then clicked on the Publishing tab at the top of the page.
 5. We can set the layer’s style here. Under WMS Settings, ensure that the Default Style is set to line.
  
  ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/15.png)
  
-Select Default Style
 6. Then I finalized the layer configuration by scrolling to the bottom of the page and clicking Save.
 Previewing the layer
 In order to verify that the gis_osm_roads_free_1 layer is published correctly, we can preview the layer.
