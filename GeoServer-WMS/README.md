@@ -69,6 +69,7 @@ The next step is to create a workspace for the shapefile.
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/geoserver5.png)
 
 7. Then, I clicked on the Submit button. The navyagarg workspace was added to the Workspaces list.
+
 Create a store
 Once the workspace is created, we are ready to add a new store. The store tells GeoServer how to connect to the shapefile.
 1. I navigated to Data‣Stores.
@@ -109,6 +110,8 @@ Now that the store is loaded, we can publish the layer.
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/15.png)
  
 6. Then I finalized the layer configuration by scrolling to the bottom of the page and clicking Save.
+
+
 Previewing the layer
 In order to verify that the gis_osm_roads_free_1 layer is published correctly, we can preview the layer.
 1. I navigated to the Layer Preview screen and found the navyagarg:gis_osm_roads_free_1 layer.
