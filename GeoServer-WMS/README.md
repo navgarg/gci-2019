@@ -27,10 +27,15 @@ echo "export GEOSERVER_HOME=/usr/share/geoserver" >> ~/.profile
 6. Next step was to give myself the permission to access the folder by making myself the owner of the geoserver folder. I typed the following command in the terminal window, replacing USER_NAME with my own username :
 sudo chown -R navya /usr/share/geoserver/
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/3.png)
+
 7. Then I entered into GeoServer directory geoserver/bin and started GeoServer by executing the startup.sh script:
 cd g/usr/share/eoserver/bin
 sh startup.sh
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/4.png)
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/5.png)
 
 The above two window screeshots demonstrate that GeoServer was correctly started.
 8. I opened the URL http://localhost:8080/geoserver. In the browser and logged in to the GeoServer as admin with the following credentials.
