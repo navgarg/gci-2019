@@ -78,7 +78,6 @@ Note that the data sources are extensible, so your list may look slightly differ
  
  ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/geoserver6.png)
  
-Stores
 4. I then clicked on Shapefile. The New Vector Data Source page was displayed.
 5. I began by configuring the Basic Store Info.
 I selected the workspace navyagarg from the drop down menu. 
