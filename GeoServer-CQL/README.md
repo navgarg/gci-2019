@@ -1,5 +1,6 @@
-Tutorial for the Process Followed
-GCI 2019 Task Name: OpenLayers and GeoServer: Common Query Language (CQL)
+Tutorial for the Process Followed:
+
+GCI 2019 Task: OpenLayers and GeoServer: Common Query Language (CQL)
 
 Disclaimer / Credit: This tutorial has been created using the steps suggested by Geoserver website at https://docs.geoserver.org/latest/en/user/gettingstarted/shapefile-quickstart/index.html. Accordingly, the steps given below are an adopted version of the steps available on that webpage.
 
