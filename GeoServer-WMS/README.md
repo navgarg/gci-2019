@@ -65,8 +65,8 @@ The next step is to create a workspace for the shapefile.
  
 6. I entered the Name as navyagarg and the Namespace URI as http://geoserver.org/navyagarg.
 
- 
-nyc workspace
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/geoserver5.png)
+
 7. Then, I clicked on the Submit button. The navyagarg workspace was added to the Workspaces list.
 Create a store
 Once the workspace is created, we are ready to add a new store. The store tells GeoServer how to connect to the shapefile.
@@ -74,6 +74,8 @@ Once the workspace is created, we are ready to add a new store. The store tells 
 2. There, I could see a list of stores, including the type of store and the workspace that the store belongs to.
 3. In order to add the shapefile, I created a new store. I clicked on the Add new Store button. I was redirected to a list of the data sources supported by GeoServer. 
 Note that the data sources are extensible, so your list may look slightly different.
+ 
+ ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/geoserver6.png)
  
 Stores
 4. I then clicked on Shapefile. The New Vector Data Source page was displayed.
