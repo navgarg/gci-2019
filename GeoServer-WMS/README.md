@@ -8,10 +8,12 @@ Disclaimer / Credit: This tutorial has been created using the steps suggested by
 Installing Java 8 and GeoServer
 1. To install and run GeoServer on your machine, it should have Java 8 installed. So, the first step I followed was to check it.
 
-![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/javaout.png)
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/1.png)
 
 The above output shows that Java is not currently installed on my Ubuntu machine. So I need to install it.
 2. Then I installed Java 8 and ran the command again.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/1_1.png)
 
 The above output shows that Java 8 is currently installed.
 3. Then, to start the installation of GeoServer, the first task was to download the desired version of GeoServer package. I opened the webpage http://geoserver.org/release/stable/ and chose Platform Independent Binaries.
