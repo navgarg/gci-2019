@@ -18,6 +18,8 @@ The above output shows that Java is not currently installed on my Ubuntu machine
 The above output shows that Java 8 is currently installed.
 3. Then, to start the installation of GeoServer, the first task was to download the desired version of GeoServer package. I opened the webpage http://geoserver.org/release/stable/ and chose Platform Independent Binaries.
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/2_2.png)
+
 4. As soon as I clicked on the hyperlink, the download of the GeoServer package from SourceForge website started. I saved the package and unpacked it in the directory  /usr/share/geoserver.
 5. After this I added an environment variable to save the location of GeoServer by typing the following command:
 echo "export GEOSERVER_HOME=/usr/share/geoserver" >> ~/.profile
