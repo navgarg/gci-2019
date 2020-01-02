@@ -5,7 +5,7 @@
 **Disclaimer / Credit:** This tutorial has been created using the steps suggested by Geoserver website at https://docs.geoserver.org/latest/en/user/gettingstarted/shapefile-quickstart/index.html. Accordingly, the steps given below are an adopted version of the steps available on that webpage.
 
 
-Installing Java 8 and GeoServer
+**Installing Java 8 and GeoServer**
 1. To install and run GeoServer on your machine, it should have Java 8 installed. So, the first step I followed was to check it.
 
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/1.png)
@@ -44,7 +44,8 @@ Password: geoserver
  
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/geoserver2.png)
 
-Data preparation
+**Data preparation**
+
 I have taken the Columbia State Road data from the URL given below:
 1. I went to the webpage https://download.geofabrik.de/north-america/us/district-of-columbia.html. This archive contains a shapefile of roads from Columbia State that will be used during in this tutorial.
 2. I clicked on the last URL given in the screenshot.
