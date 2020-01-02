@@ -84,6 +84,8 @@ I selected the workspace navyagarg from the drop down menu.
 I entered the Data Source Name as Columbia Roads 
 Then, I entered a brief Description (such as “Roads in Columbia”). 
 6. Under Connection Parameters, I browsed to the location URL of the shapefile gis_osm_roads_free_1.shp.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/11.png)
  
 Basic Store Info and Connection Parameters
 7. And clicked on save. I was redirected to the New Layer page in order to configure the gis_osm_roads_free_1 layer.
@@ -91,8 +93,12 @@ Creating a layer
 Now that the store is loaded, we can publish the layer.
 1. On the New Layer page, I clicked Publish beside the gis_osm_roads_free_1 layer name.
  
+ ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/12.png)
+ 
 New layer
 2. The Edit Layer page defines the data and publishing parameters for a layer. Here, I entered a short Title and an Abstract for the gis_osm_roads_free_1 layer.
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer-WMS/Images/13.png)
+
  
 Basic Resource Information
 3. Then, I generated the layer’s bounding boxes by clicking the Compute from data and then Compute from native bounds links.
