@@ -15,29 +15,57 @@
     <h2>My Map</h2>
     <div id="map" class="map"></div>
     <script type="text/javascript">
+
       var map = new ol.Map({
         target: 'map',
         layers: [
           new ol.layer.Tile({
             source: new ol.source.OSM()
           }),
-          new ol.layer.Tile({
-    				source: new ol.source.TileWMS({
-        		url: 'http://localhost:8080/geoserver/navyagarg/wms?',
-       			params: {
-              'LAYERS': 'navyagarg:gis_osm_roads_free_1',
-              'VERSION': '1.1.1',
-              'FORMAT': 'image/png',
-              'TILED': true
-        		},
-    			})
-				})
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([-88, 35]),
           zoom: 4
         })
       });
-    </script>
+
+var layer1 = new ol.layer.Tile({
+    	source: new ol.source.TileWMS({
+        url: 'http://localhost:8080/geoserver/navyagarg/wms?',
+       	params: {
+              'LAYERS': 'navyagarg:gis_osm_roads_free_1',
+              'VERSION': '1.1.1',
+              'FORMAT': 'image/png',
+              'TILED': true,
+        }
+    	})
+});
+      
+map.addLayer(layer1);
+
+      
+function func() {
+map.removeLayer(layer1);
+var layer1 = new ol.layer.Tile({
+   	source: new ol.source.TileWMS({
+        url: 'http://localhost:8080/geoserver/navyagarg/wms?',
+       	params: {
+              'LAYERS': 'navyagarg:gis_osm_roads_free_1',
+              'VERSION': '1.1.1',
+              'FORMAT': 'image/png',
+              'TILED': true,
+	      'CQL_FILTER': 'code=getElementById("code").value'
+       }
+   	})
+});
+alert('submitted');
+}
+     </script>
+
+<form onSubmit='func()'>
+            <label>CQL Filter</label>
+            <input id="code" type="text">
+            <input type="submit" >
+    </form>
   </body>
-</html>
+</html> 
