@@ -20,7 +20,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#FEF0D9</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
@@ -41,7 +40,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#FDD49E</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
@@ -62,7 +60,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#FDBB84</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
@@ -83,7 +80,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#FC8D59</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
@@ -104,7 +100,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#E34A33</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
@@ -125,7 +120,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#B30000</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
@@ -146,7 +140,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#990000</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
@@ -154,7 +147,6 @@
         </Rule>
         <Rule>
           <Title>&gt; 6M</Title>
-          <!-- like a linesymbolizer but with a fill too -->
           <ogc:Filter>
             <ogc:PropertyIsGreaterThan>
              <ogc:PropertyName>PERSONS</ogc:PropertyName>
@@ -163,7 +155,6 @@
           </ogc:Filter>
           <PolygonSymbolizer>
              <Fill>
-                <!-- CssParameters allowed are fill (the color) and fill-opacity -->
                 <CssParameter name="fill">#7F0000</CssParameter>
                 <CssParameter name="fill-opacity">0.7</CssParameter>
              </Fill>     
