@@ -7,6 +7,8 @@ This page describes the prcess followed to build a Windows Installer for GeoServ
 1. Download and install NSIS from the link https://nsis.sourceforge.io/Main_Page
 (NSIS (Nullsoft Scriptable Install System) is a professional open source system to create Windows installers.)
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/1.PNG)
+
 2. Now we need to install the NSIS Access Control plugin. For this, we will first download the zip file from the link http://nsis.sourceforge.net/AccessControl_plug-in and extract in our computer. 
 
 3. Then we copy the file `AccessControl.dll` from the Plugins folder of NSIS_AccessControl to c:\Program FIles (x86)\NSIS\Plugin\x86-ansi
