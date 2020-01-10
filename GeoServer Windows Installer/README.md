@@ -39,4 +39,14 @@ This page describes the prcess followed to build a Windows Installer for GeoServ
 
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/files.PNG)
 
-9. Now right click on the file GeoServerEXE.nsi file (which is the NSIS Compiler script) and select the option Compile NSIS Script. This will compile the GeoServer code and give one .exe file, which can be double clicked to start the GeoServer Windows Installer.
+9. Now right click on the file GeoServerEXE.nsi file (which is the NSIS Compiler script) and select the option Compile NSIS Script.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/compile%20script.PNG)
+
+This will compile the GeoServer code and give one .exe file, which can be double clicked to start the GeoServer Windows Installer.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/Compilation%20in%20progress.PNG)
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/compilation%20complete.PNG)
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/final.PNG)  
