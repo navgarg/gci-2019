@@ -21,14 +21,22 @@ This page describes the prcess followed to build a Windows Installer for GeoServ
 
 4. Then copy the file `AccessControl.dll` from the Unicode\Plugins folder of NSIS_AccessControl to c:\Program FIles(x86)\NSIS\Plugins\x86-unicode.
 
-![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/paste%20unicode&20file.PNG)
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/paste%20unicode%20file.PNG)
 
 5. Now download the GeoServer Source Code in zipped format from the link http://geoserver.org/release/stable/
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/6.PNG)
+
 6. Also download the GeoServer Binary Package from the same page i.e. http://geoserver.org/release/stable/
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/Binary%20Package.PNG)
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/5.PNG)
 
 7. Extract Geoserver Source Code and Geoserver Binary Package.
 
 8. Copy the contents of the src/release/installer/win of Geoserver Source Code into root folder of GeoServer Binary Package (i.e. the same level in which start.jar file is located)
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/files.PNG)
 
 9. Now right click on the file GeoServerEXE.nsi file (which is the NSIS Compiler script) and select the option Compile NSIS Script. This will compile the GeoServer code and give one .exe file, which can be double clicked to start the GeoServer Windows Installer.
