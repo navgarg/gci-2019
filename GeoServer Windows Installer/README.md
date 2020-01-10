@@ -11,6 +11,10 @@ This page describes the prcess followed to build a Windows Installer for GeoServ
 
 2. Now we need to install the NSIS Access Control plugin. For this, we will first download the zip file from the link http://nsis.sourceforge.net/AccessControl_plug-in and extract in our computer. 
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/2.PNG)
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/3.PNG)
+
 3. Then we copy the file `AccessControl.dll` from the Plugins folder of NSIS_AccessControl to c:\Program FIles (x86)\NSIS\Plugin\x86-ansi
 
 4. Then copy the file `AccessControl.dll` from the Unicode\Plugins folder of NSIS_AccessControl to c:\Program FIles(x86)\NSIS\Plugins\x86-unicode.
