@@ -17,7 +17,11 @@ This page describes the prcess followed to build a Windows Installer for GeoServ
 
 3. Then we copy the file `AccessControl.dll` from the Plugins folder of NSIS_AccessControl to c:\Program FIles (x86)\NSIS\Plugin\x86-ansi
 
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/paste%20ansi%20file.PNG)
+
 4. Then copy the file `AccessControl.dll` from the Unicode\Plugins folder of NSIS_AccessControl to c:\Program FIles(x86)\NSIS\Plugins\x86-unicode.
+
+![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/paste%20unicode&20file.PNG)
 
 5. Now download the GeoServer Source Code in zipped format from the link http://geoserver.org/release/stable/
 
