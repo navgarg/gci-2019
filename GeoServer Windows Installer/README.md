@@ -52,3 +52,5 @@ This will compile the GeoServer code and give one .exe file, which can be double
 ![](https://github.com/navgarg/gci-2019/blob/master/GeoServer%20Windows%20Installer/Images/final.PNG)  
 
 That's all. Our GeoServer Windows Installer is ready to be used.
+
+Link to the GeoServer installer - https://drive.google.com/open?id=1p4ZSYOawuSpRw76Qw4RFFdwsvd2ADRWE
